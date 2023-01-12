@@ -93,5 +93,16 @@ class ColAdmin(admin.ModelAdmin):
                 return self.error_data_handle(request)
             result = await self.db.async_run_sync(self._update_items, item_id, values)
             return BaseApiOut(data=result)
+        return route
 
+    @property
+    def route_delete(self) -> Callable:
+        async def route(
+                request: Request,
+                item_ids: List[str] = Depends(parser_item_id),
+        ):
+            if not await self.has_delete_permission(request, item_ids):
+                return self.error_no_router_permission(request)
+            result = await self.db.async_run_sync(self._delete_items, item_ids)
+            return BaseApiOut(data=result)
         return route
