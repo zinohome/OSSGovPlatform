@@ -22,7 +22,7 @@ class BaseSQLModel(sqlmodel.SQLModel):
         arbitrary_types_allowed = True
 
 class NavDef(BaseSQLModel, table=True):
-    __tablename__ = 'navdef'
+    __tablename__ = 'oss_navdef'
     #id字段默认隐藏
     navdef_id: int = models.Field(default=None, title=_('navdef_id'), primary_key=True, nullable=False)
     navdef_name: str = models.Field(title=_('navdef_name'), nullable=False,

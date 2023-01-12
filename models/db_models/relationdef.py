@@ -22,7 +22,7 @@ class BaseSQLModel(sqlmodel.SQLModel):
         arbitrary_types_allowed = True
 
 class RelationDef(BaseSQLModel, table=True):
-    __tablename__ = 'relationdef'
+    __tablename__ = 'oss_relationdef'
     #id字段默认隐藏
     relationdef_id: int = models.Field(default=None, title=_('relationdef_id'), primary_key=True, nullable=False)
     relationdef_name: str = models.Field(title=_('relationdef_name'), nullable=False,

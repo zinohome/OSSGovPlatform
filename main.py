@@ -57,11 +57,11 @@ Database(syncengine).run_sync(SQLModel.metadata.create_all, tables=[metatables['
                                                                     metatables['auth_role'],
                                                                     metatables['auth_group'],
                                                                     metatables['auth_permission'],
-                                                                    metatables['coldef'],
-                                                                    metatables['navdef'],
-                                                                    metatables['pagedef'],
-                                                                    metatables['relationdef'],
-                                                                    metatables['graphdef'],
+                                                                    metatables['oss_coldef'],
+                                                                    metatables['oss_navdef'],
+                                                                    metatables['oss_pagedef'],
+                                                                    metatables['oss_relationdef'],
+                                                                    metatables['oss_graphdef'],
                                                                     metatables['auth_token']], is_session=False)
 syncengine.dispose()
 

@@ -22,7 +22,7 @@ class BaseSQLModel(sqlmodel.SQLModel):
         arbitrary_types_allowed = True
 
 class GraphDef(BaseSQLModel, table=True):
-    __tablename__ = 'graphdef'
+    __tablename__ = 'oss_graphdef'
     #id字段默认隐藏
     graphdef_id: int = models.Field(default=None, title=_('graphdef_id'), primary_key=True, nullable=False)
     graphdef_name: str = models.Field(title=_('graphdef_name'), nullable=False,

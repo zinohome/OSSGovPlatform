@@ -22,7 +22,7 @@ class BaseSQLModel(sqlmodel.SQLModel):
         arbitrary_types_allowed = True
 
 class PageDef(BaseSQLModel, table=True):
-    __tablename__ = 'pagedef'
+    __tablename__ = 'oss_pagedef'
     #id字段默认隐藏
     pagedef_id: int = models.Field(default=None, title=_('pagedef_id'), primary_key=True, nullable=False)
     pagedef_col: str = models.Field(title=_('pagedef_col'), nullable=False,

@@ -22,7 +22,7 @@ class BaseSQLModel(sqlmodel.SQLModel):
         arbitrary_types_allowed = True
 
 class ColDef(BaseSQLModel, table=True):
-    __tablename__ = 'coldef'
+    __tablename__ = 'oss_coldef'
     #id字段默认隐藏
     coldef_id: int = models.Field(default=None, title=_('coldef_id'), primary_key=True, nullable=False)
     coldef_name: str = models.Field(title=_('coldef_name'), nullable=False,
