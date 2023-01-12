@@ -1,0 +1,394 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-08-21 15:13+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: ../apps/admin/admin.py:40 ../apps/admin/admin.py:59
+msgid "Data Explore"
+msgstr "数据浏览"
+
+#: ../apps/admin/admin.py:66
+msgid "Data Source"
+msgstr "数据源"
+
+#: ../apps/admin/admin.py:78
+msgid "DataSources"
+msgstr "数据源"
+
+#: ../apps/admin/admin.py:109 ../apps/admin/admin.py:152
+#: ../apps/admin/admin.py:200 ../apps/admin/admin.py:260
+msgid "Bulk Create"
+msgstr "批量新增"
+
+#: ../apps/admin/admin.py:118 ../apps/admin/admin.py:129
+msgid "Cancel"
+msgstr "取消"
+
+#: ../apps/admin/admin.py:119 ../apps/admin/admin.py:130
+msgid "Test Connection"
+msgstr "测试连接"
+
+#: ../apps/admin/admin.py:120 ../apps/admin/admin.py:132
+msgid "Submit"
+msgstr "提交"
+
+#: ../apps/admin/admin.py:131
+msgid "Confirm to sync all tables immediately?"
+msgstr "确认立刻同步所有表结构吗？"
+
+#: ../apps/admin/admin.py:131
+msgid "Sync Structure"
+msgstr "同步表结构"
+
+#: ../apps/admin/admin.py:143
+msgid "Datasource Config"
+msgstr "数据源配置"
+
+#: ../apps/admin/admin.py:185
+msgid "Table Meta"
+msgstr "表结构"
+
+#: ../apps/admin/admin.py:200 ../apps/admin/admin.py:260
+msgid "Create"
+msgstr "新增"
+
+#: ../apps/admin/admin.py:216 ../apps/admin/admin.py:235
+#: ../apps/admin/admin.py:276 ../apps/admin/admin.py:295
+msgid "Basic Info"
+msgstr "基本信息"
+
+#: ../apps/admin/admin.py:245
+msgid "Page Define"
+msgstr "页面定义"
+
+#: ../apps/admin/admin.py:306 ../apps/admin/admin.py:316
+msgid "APIDocs"
+msgstr "API文档"
+
+#: ../apps/admin/admin.py:307
+msgid "Docs"
+msgstr "Swagger"
+
+#: ../apps/admin/admin.py:317
+msgid "Redocs"
+msgstr "ReDoc"
+
+#: ../apps/admin/admin.py:66
+msgid "Data Query"
+msgstr "数据查询"
+
+#: ../apps/admin/admin.py:469
+msgid "> Run"
+msgstr "> 执行"
+
+#: ../apps/admin/admin.py:473
+msgid "Select DataSource"
+msgstr "选择数据源"
+
+#: ../apps/admin/admin.py:476
+msgid "DSName"
+msgstr "数据源名称"
+
+#: ../apps/admin/admin.py:476
+msgid "DSURI"
+msgstr "数据库URI"
+
+#: ../apps/admin/admin.py:476
+msgid "SQL Editor"
+msgstr "SQL编辑器"
+
+#: ../apps/admin/apis.py:37 ../apps/admin/apis.py:51
+msgid "Get column options Error"
+msgstr "获取参数失败"
+
+#: ../apps/admin/apis.py:66
+msgid "DataBase Connected"
+msgstr "数据库连接成功"
+
+#: ../apps/admin/apis.py:70
+msgid "DataBase Connect Error"
+msgstr "数据库连接失败"
+
+#: ../apps/admin/apis.py:100
+msgid "DataBase synchronized"
+msgstr "表结构同步成功"
+
+#: ../apps/admin/apis.py:103
+msgid "DataBase synchronized Error"
+msgstr "表结构同步同步错误"
+
+#: ../apps/admin/models/datasource.py:32 ../apps/admin/models/dsmeta.py:52
+#: ../apps/admin/models/dspage.py:75
+msgid "DatasourceID"
+msgstr "数据源ID"
+
+#: ../apps/admin/models/datasource.py:34
+msgid "DatasourceName"
+msgstr "数据源名称"
+
+#: ../apps/admin/models/datasource.py:38
+msgid "URI"
+msgstr "连接URI"
+
+#: ../apps/admin/models/datasource.py:41 ../apps/admin/models/dsmeta.py:34
+#: ../apps/admin/models/dspage.py:40
+msgid "Schema"
+msgstr "Schema"
+
+#: ../apps/admin/models/datasource.py:42
+msgid "ExcludedTableSpace"
+msgstr "排除的表空间"
+
+#: ../apps/admin/models/datasource.py:43
+msgid "DatasourceConfigID"
+msgstr "数据源配置ID"
+
+#: ../apps/admin/models/datasourceconfig.py:43
+msgid "ConfigID"
+msgstr "配置ID"
+
+#: ../apps/admin/models/datasourceconfig.py:45
+msgid "ConfigName"
+msgstr "配置名称"
+
+#: ../apps/admin/models/datasourceconfig.py:50
+msgid "ApplicationParams"
+msgstr "应用参数"
+
+#: ../apps/admin/models/datasourceconfig.py:73
+msgid "ConnectionParams"
+msgstr "连接参数"
+
+#: ../apps/admin/models/datasourceconfig.py:82
+msgid "SchemaParams"
+msgstr "Schema参数"
+
+#: ../apps/admin/models/datasourceconfig.py:90
+msgid "Please enter the comma-separated table name"
+msgstr "请输入逗号分隔的表名称"
+
+#: ../apps/admin/models/datasourceconfig.py:94
+msgid "QueryParams"
+msgstr "查询参数"
+
+#: ../apps/admin/models/datasourceconfig.py:101
+msgid "AdminParams"
+msgstr "管理参数"
+
+#: ../apps/admin/models/datasourceconfig.py:111
+msgid "SecurityParams"
+msgstr "安全参数"
+
+#: ../apps/admin/models/dsmeta.py:28 ../apps/admin/models/dspage.py:32
+msgid "MetaID"
+msgstr "表结构ID"
+
+#: ../apps/admin/models/dsmeta.py:30 ../apps/admin/models/dsmeta.py:43
+#: ../apps/admin/models/dspage.py:34
+msgid "Name"
+msgstr "名称"
+
+#: ../apps/admin/models/dsmeta.py:36 ../apps/admin/models/dsmeta.py:44
+#: ../apps/admin/models/dspage.py:42
+msgid "Type"
+msgstr "类型"
+
+#: ../apps/admin/models/dsmeta.py:37 ../apps/admin/models/dspage.py:44
+msgid "PrimaryKey"
+msgstr "主键"
+
+#: ../apps/admin/models/dsmeta.py:39 ../apps/admin/models/dspage.py:48
+msgid "Indexes"
+msgstr "索引"
+
+#: ../apps/admin/models/dsmeta.py:42 ../apps/admin/models/dspage.py:51
+msgid "Columns"
+msgstr "列"
+
+#: ../apps/admin/models/dsmeta.py:45
+msgid "Nullable"
+msgstr "可空"
+
+#: ../apps/admin/models/dsmeta.py:46
+msgid "Default"
+msgstr "默认值"
+
+#: ../apps/admin/models/dsmeta.py:47
+msgid "Autoincrement"
+msgstr "自增"
+
+#: ../apps/admin/models/dsmeta.py:48
+msgid "Primarykey"
+msgstr "主键"
+
+#: ../apps/admin/models/dsmeta.py:49
+msgid "PythonType"
+msgstr "Python类型"
+
+#: ../apps/admin/models/dspage.py:38
+msgid "Title"
+msgstr "标题"
+
+#: ../apps/admin/models/dspage.py:46
+msgid "LogicPrimaryKey"
+msgstr "逻辑主键"
+
+#: ../apps/admin/models/dspage.py:53
+msgid "name"
+msgstr "名称"
+
+#: ../apps/admin/models/dspage.py:55
+msgid "type"
+msgstr "类型"
+
+#: ../apps/admin/models/dspage.py:56
+msgid "nullable"
+msgstr "可空"
+
+#: ../apps/admin/models/dspage.py:58
+msgid "default"
+msgstr "默认值"
+
+#: ../apps/admin/models/dspage.py:60
+msgid "autoincrement"
+msgstr "自增"
+
+#: ../apps/admin/models/dspage.py:62
+msgid "primary_key"
+msgstr "主键"
+
+#: ../apps/admin/models/dspage.py:64
+msgid "pythonType"
+msgstr "Python类型"
+
+#: ../apps/admin/models/dspage.py:53
+msgid "Label"
+msgstr "标题"
+
+#: ../apps/admin/models/dspage.py:60
+msgid "AMIS Form Item"
+msgstr "AMIS_Form_Item"
+
+#: ../apps/admin/models/dspage.py:61
+msgid "AMIS Table Column"
+msgstr "AMIS_Table_Column"
+
+#: ../apps/admin/models/dspage.py:71
+msgid "ListDisplay"
+msgstr "列表显示字段"
+
+#: ../apps/admin/models/dspage.py:73
+msgid "SearchFields"
+msgstr "模糊搜索字段"
+
+#: ../core/adminsite.py:50 ../core/adminsite.py:52
+msgid "User Profile"
+msgstr "用户信息"
+
+#: ../core/adminsite.py:67
+msgid "Sign out"
+msgstr "退出登录"
+
+#: ../apps/admin/admin.py:48
+msgid "Home"
+msgstr "首页"
+
+#: ../apps/admin/admin.py:80
+msgid "Current:"
+msgstr "当前:"
+
+#: ../apps/admin/admin.py:85
+msgid "All:"
+msgstr "全部:"
+
+#: ../apps/admin/admin.py:105
+msgid "No Data Found"
+msgstr "暂无数据"
+
+#: ../apps/admin/admin.py:110
+msgid "<p>Capricornus DataSource Wizard</p>"
+msgstr "<p>Capricornus 使用向导</p>"
+
+#: ../apps/admin/admin.py:118
+msgid "Step 1: Create DataSource"
+msgstr "第一步: 连接数据源"
+
+#: ../apps/admin/admin.py:122
+msgid "DataSource Name"
+msgstr "数据源名称"
+
+#: ../apps/admin/admin.py:131
+msgid "DataSource URI"
+msgstr "连接URI"
+
+#: ../apps/admin/admin.py:140
+msgid "Schema"
+msgstr "Schema"
+
+#: ../apps/admin/admin.py:147
+msgid "Exclude Tablespaces"
+msgstr "排除的表空间"
+
+#: ../apps/admin/admin.py:169
+msgid "Step 2: Synchronize Data Structure"
+msgstr "第二步: 同步数据结构"
+
+#: ../apps/admin/admin.py:197
+msgid "Step 3: Enjoy Your REST API"
+msgstr "第三步: 使用API"
+
+#: ../apps/admin/admin.py:201
+msgid "<p>Good Job ! Now, enjoy your REST API by change the APP_PROFILE in your Environment variables to your DataSource Name.</p>"
+msgstr "<p>真棒！现在，修改环境变量APP_PROFILE的值为你的数据源名称并重新启动Capricornus，享受你的 REST API 吧……</p>"
+
+#: ../apps/admin/apis.py:48
+msgid "Table"
+msgstr "表"
+
+#: ../apps/admin/apis.py:49
+msgid "Number of Tables"
+msgstr "系统表数量"
+
+#: ../apps/admin/apis.py:56
+msgid "View"
+msgstr "视图"
+
+#: ../apps/admin/apis.py:57
+msgid "Number of Views"
+msgstr "系统视图数量"
+
+#: ../apps/admin/apis.py:65
+msgid "Number of APIs"
+msgstr "系统API数量"
+
+#: ../apps/admin/apis.py:72
+msgid "User"
+msgstr "用户"
+
+#: ../apps/admin/apis.py:73
+msgid "Number of Users"
+msgstr "系统用户数量"
+
+#: ../apps/admin/apis.py:170
+msgid "DataSource Created"
+msgstr "数据源创建成功"
+
+#: ../apps/admin/apis.py:194
+msgid "DataBase synchronized"
+msgstr "数据结构同步成功"
+
+#: ../apps/admin/apis.py:196
+msgid "Wizard Completed"
+msgstr "向导完成"
