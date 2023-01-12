@@ -7,7 +7,7 @@
 #  @Time    : 2021
 #  @Author  : Zhang Jun
 #  @Email   : ibmzhangjun@139.com
-#  @Software: AgileOps
+#  @Software: OSSGov
 
 import os
 from pathlib import Path
@@ -18,7 +18,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 class Settings(AmisSettings):
     # 基础配置
-    name: str = 'AgileOps'
+    name: str = 'OSSGov'
     host: str = '0.0.0.0'
     port: int = 8880
     debug: bool = False
@@ -30,7 +30,7 @@ class Settings(AmisSettings):
     allow_origins: List[str] = ["*"]
 
     # 服务器配置
-    server_name: str = 'AgileOps-server'
+    server_name: str = 'OSSGov-server'
     server_core_origins: str = '[*]'
 
     # jaeger 配置
@@ -42,21 +42,6 @@ class Settings(AmisSettings):
     api_ansible_backend: str = 'AWX'
     api_debug: bool = False
 
-    # AWX Client 配置
-    AWX_API_URL: str = 'http://192.168.32.1:30080/api/v2'
-    AWX_USERNAME: str = 'admin'
-    AWX_PASSWORD: str = 'CEJ4xaOcUxKXIbnBlevMHDcBnTHmfdja'
-    AWX_TOKEN: str = None
-
-    # Semaphore Client 配置
-    semph_api_url: str = 'http://192.168.122.81:3000/api'
-    semph_username: str = 'admin'
-    semph_password: str = 'passw0rd'
-    semph_token: str = 'loru0zlu_bvgi8vqix58mmdfawomow0lzhy-xsxubcm='
-
-    # Gitea配置
-    gitea_api_url: str = 'http://localhost:3000/api/v1'
-    gitea_api_token: str = '9f18a4dc35783bdb864f92bda50dfbe94f99cbfb'
 
 
 settings = Settings(_env_file=os.path.join(BASE_DIR, '.env'))

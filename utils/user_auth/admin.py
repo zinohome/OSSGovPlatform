@@ -32,7 +32,7 @@ def attach_page_head(page: Page) -> Page:
     #     title = _("Welcome to login")
     # else:
     #     title = _("Welcome to sign up")
-    title=_("Welcome to login AgileOps")
+    title=_("Welcome to login OSSGov")
     page.className="ao-signup-wrapper"
     page.body = [
         Page(
