@@ -9,13 +9,13 @@ from utils.amis_admin.amis import API
 
 class Settings(BaseSettings):
     """Project configuration"""
-    name: str = 'OSSGov'
+    name: str = 'Practitioner'
     host: str = '0.0.0.0'
     port: int = 8880
     debug: bool = False
     secret_key: str = Field('changeit', env='SECRET_KEY')
     version: str = '0.1.6'
-    site_title: str = "OSSGov"
+    site_title: str = "Practitioner"
     site_description: str = 'An OSS Governance Platform'
     site_icon: str = "https://baidu.gitee.io/amis/static/favicon_b3b0647.png"
     site_url: str = ""
@@ -34,7 +34,7 @@ class Settings(BaseSettings):
     app_log_filename: str = Field('', env='APP_LOG_FILENAME')
 
     # 服务器配置
-    server_name: str = Field('OSSGov-server', env='SERVER_NAME')
+    server_name: str = Field('Practitioner-server', env='SERVER_NAME')
     # SERVER_CORS_ORIGINS is a JSON-formatted list of origins
     # e.g: '["http://localhost", "http://localhost:4200", "http://localhost:3000", \
     # "http://localhost:8080", "http://local.dockertoolbox.tiangolo.com"]'

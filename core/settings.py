@@ -7,7 +7,7 @@
 #  @Time    : 2021
 #  @Author  : Zhang Jun
 #  @Email   : ibmzhangjun@139.com
-#  @Software: OSSGov
+#  @Software: Practitioner
 
 import os
 from pathlib import Path
@@ -18,7 +18,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 class Settings(AmisSettings):
     # 基础配置
-    name: str = 'OSSGov'
+    name: str = 'Practitioner'
     host: str = '0.0.0.0'
     port: int = 8880
     debug: bool = False
@@ -30,7 +30,7 @@ class Settings(AmisSettings):
     allow_origins: List[str] = ["*"]
 
     # 服务器配置
-    server_name: str = 'OSSGov-server'
+    server_name: str = 'Practitioner-server'
     server_core_origins: str = '[*]'
 
     # API配置

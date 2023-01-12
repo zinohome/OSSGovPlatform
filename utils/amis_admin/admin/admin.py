@@ -474,7 +474,6 @@ class BaseModelAdmin(SQLModelCrud):
         )
         if self.link_model_forms:
             table.footable = True
-        print(table)
         return table
 
     async def get_form_item_on_foreign_key(

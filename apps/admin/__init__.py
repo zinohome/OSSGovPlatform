@@ -8,7 +8,3 @@ def setup(app: FastAPI):
     # 3. 注册普通路由
     from . import apis
     app.include_router(apis.router)
-    # 4. 注册Ansible API路由
-    from . import ansibleapis
-    app.include_router(ansibleapis.router)
-

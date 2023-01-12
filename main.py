@@ -7,7 +7,7 @@
 #  @Time    : 2021
 #  @Author  : Zhang Jun
 #  @Email   : ibmzhangjun@139.com
-#  @Software: OSSGov
+#  @Software: Practitioner
 
 import os
 import uvicorn
@@ -53,6 +53,7 @@ Database(syncengine).run_sync(SQLModel.metadata.create_all, tables=[metatables['
                                                                     metatables['auth_role'],
                                                                     metatables['auth_group'],
                                                                     metatables['auth_permission'],
+                                                                    metatables['host'],
                                                                     metatables['auth_token']], is_session=False)
 syncengine.dispose()
 

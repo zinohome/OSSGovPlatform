@@ -7,7 +7,7 @@
 #  @Time    : 2021
 #  @Author  : Zhang Jun
 #  @Email   : ibmzhangjun@139.com
-#  @Software: OSSGov
+#  @Software: Practitioner
 
 import os
 
@@ -25,7 +25,7 @@ from utils.log import log as log
 CORE_DIR = os.path.dirname(os.path.abspath(__file__))
 TEMP_DIR = os.path.join(CORE_DIR, 'templates/app.html')
 
-class OSSGovSite(AuthAdminSite):
+class PractitionerSite(AuthAdminSite):
     template_name = TEMP_DIR
 
     def __init__(self, settings: Settings, fastapi: FastAPI = None, engine: AsyncEngine = None):
@@ -75,6 +75,6 @@ class OSSGovSite(AuthAdminSite):
         return app
 
 
-site = OSSGovSite(settings)
+site = PractitionerSite(settings)
 auth = site.auth
 site.UserAuthApp.page_schema.sort = -99
