@@ -21,7 +21,7 @@ from utils.log import log as log
 class GraphAdmin(admin.ModelAdmin):
     # 继承自ModelAdmin，因此ModelAdmin(BaseModelAdmin, PageAdmin) 的方法都可以重写
     group_schema = None
-    page_schema = PageSchema(label=_('Graphics'), page_title=_('Graphics'), icon='fas fa-desktop')
+    page_schema = PageSchema(label=_('Graphics'), page_title=_('Graphics'), icon='fas fa-diagram-project')
     model = GraphDef
     pk_name = 'graphdef_id'
     enable_bulk_create = True

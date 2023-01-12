@@ -21,7 +21,7 @@ from utils.log import log as log
 class ColAdmin(admin.ModelAdmin):
     # 继承自ModelAdmin，因此ModelAdmin(BaseModelAdmin, PageAdmin) 的方法都可以重写
     group_schema = None
-    page_schema = PageSchema(label=_('Collections'), page_title=_('Collections'), icon='fas fa-desktop')
+    page_schema = PageSchema(label=_('Collections'), page_title=_('Collections'), icon='fas fa-table')
     model = ColDef
     pk_name = 'coldef_id'
     enable_bulk_create = True

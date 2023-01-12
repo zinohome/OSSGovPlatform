@@ -21,7 +21,7 @@ from utils.log import log as log
 class PageAdmin(admin.ModelAdmin):
     # 继承自ModelAdmin，因此ModelAdmin(BaseModelAdmin, PageAdmin) 的方法都可以重写
     group_schema = None
-    page_schema = PageSchema(label=_('Pages'), page_title=_('Pages'), icon='fas fa-desktop')
+    page_schema = PageSchema(label=_('Pages'), page_title=_('Pages'), icon='fas fa-outdent')
     model = PageDef
     pk_name = 'pagedef_id'
     enable_bulk_create = True
