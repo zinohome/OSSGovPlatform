@@ -13,7 +13,10 @@ import traceback
 import simplejson as json
 
 from apps.admin.admin_implements.coladmin import ColAdmin
+from apps.admin.admin_implements.graphadmin import GraphAdmin
 from apps.admin.admin_implements.navadmin import NavAdmin
+from apps.admin.admin_implements.pageadmin import PageAdmin
+from apps.admin.admin_implements.relationadmin import RelationAdmin
 from utils.amis_admin.amis import PageSchema, Page
 from utils.log import log as log
 from core import i18n as _
@@ -126,7 +129,7 @@ class SysAdminApp(admin.AdminApp):
 
     def __init__(self, app: "SysAdminApp"):
         super().__init__(app)
-        self.register_admin(ColAdmin, NavAdmin)
+        self.register_admin(NavAdmin, ColAdmin, PageAdmin, RelationAdmin, GraphAdmin)
 
 # API docs
 @site.register_admin
