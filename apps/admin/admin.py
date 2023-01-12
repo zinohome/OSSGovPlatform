@@ -7,11 +7,13 @@
 #  @Time    : 2021
 #  @Author  : Zhang Jun
 #  @Email   : ibmzhangjun@139.com
-#  @Software: AgileOps
+#  @Software: Practitioner
 
 import traceback
 import simplejson as json
 
+from apps.admin.admin_implements.coladmin import ColAdmin
+from apps.admin.admin_implements.navadmin import NavAdmin
 from utils.amis_admin.amis import PageSchema, Page
 from utils.log import log as log
 from core import i18n as _
@@ -104,27 +106,27 @@ class HomeAdmin(admin.PageAdmin):
         }
     )
 
-# HostAdmin
-# @site.register_admin
-# class AssetAdminApp(admin.AdminApp):
-#     page_schema = amis.PageSchema(label=_('Asset Admin'), title='AgileOps - '+_('Asset Admin'), icon='fas fa-database', sort=99)
-#     router_prefix = '/asset'
-#
-#     def __init__(self, app: "AssetAdminApp"):
-#         super().__init__(app)
-#         self.register_admin(Git_repoAdmin, PlaybookAdmin)
-
 '''
 # HostAdmin
 @site.register_admin
 class RepoAdminApp(admin.AdminApp):
-    page_schema = amis.PageSchema(label=_('Repo Admin'), title='AgileOps - '+_('Repo Admin'), icon='fas fa-database', sort=95)
+    page_schema = amis.PageSchema(label=_('Repo Admin'), title='Practitioner - '+_('Repo Admin'), icon='fas fa-database', sort=95)
     router_prefix = '/repo'
 
     def __init__(self, app: "RepoAdminApp"):
         super().__init__(app)
         self.register_admin(Git_repoAdmin, PlaybookAdmin)
 '''
+
+# SystemAdmin
+@site.register_admin
+class SysAdminApp(admin.AdminApp):
+    page_schema = amis.PageSchema(label=_('System Admin'), title='Practitioner - '+_('System Admin'), icon='fas fa-cogs', sort=96)
+    router_prefix = '/sys'
+
+    def __init__(self, app: "SysAdminApp"):
+        super().__init__(app)
+        self.register_admin(ColAdmin, NavAdmin)
 
 # API docs
 @site.register_admin

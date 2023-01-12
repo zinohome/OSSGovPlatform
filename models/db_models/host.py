@@ -7,7 +7,7 @@
 #  @Time    : 2021
 #  @Author  : Zhang Jun
 #  @Email   : ibmzhangjun@139.com
-#  @Software: AgileOps
+#  @Software: Practitioner
 
 from datetime import date
 from decimal import Decimal

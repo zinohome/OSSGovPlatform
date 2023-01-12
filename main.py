@@ -13,7 +13,11 @@ import os
 import uvicorn
 from asgi_correlation_id import CorrelationIdMiddleware
 
-from models.db_models.host import Host
+from models.db_models.navdef import NavDef
+from models.db_models.coldef import ColDef
+from models.db_models.pagedef import PageDef
+from models.db_models.relationdef import RelationDef
+from models.db_models.graphdef import GraphDef
 from utils.sqlalchemy_database import Database
 from sqlmodel import SQLModel, create_engine
 from starlette.responses import RedirectResponse
@@ -43,8 +47,8 @@ from starlette_opentracing import StarletteTracingMiddleWare
 asyncurl = str(site.db.engine.sync_engine.url)
 syncurl = sync_uri(asyncurl)
 syncengine = create_engine(syncurl, echo=False)
-metatables = Host.metadata.tables
-log.debug(metatables.keys())
+metatables = GraphDef.metadata.tables
+#log.debug(metatables.keys())
 Database(syncengine).run_sync(SQLModel.metadata.create_all, tables=[metatables['auth_user_roles'],
                                                                     metatables['auth_user_groups'],
                                                                     metatables['auth_group_roles'],
@@ -53,7 +57,11 @@ Database(syncengine).run_sync(SQLModel.metadata.create_all, tables=[metatables['
                                                                     metatables['auth_role'],
                                                                     metatables['auth_group'],
                                                                     metatables['auth_permission'],
-                                                                    metatables['host'],
+                                                                    metatables['coldef'],
+                                                                    metatables['navdef'],
+                                                                    metatables['pagedef'],
+                                                                    metatables['relationdef'],
+                                                                    metatables['graphdef'],
                                                                     metatables['auth_token']], is_session=False)
 syncengine.dispose()
 

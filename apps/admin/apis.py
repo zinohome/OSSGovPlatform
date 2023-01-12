@@ -7,7 +7,7 @@
 #  @Time    : 2021
 #  @Author  : Zhang Jun
 #  @Email   : ibmzhangjun@139.com
-#  @Software: AgileOps
+#  @Software: Practitioner
 
 from fastapi import APIRouter, Depends
 from utils.user_auth.auth.models import User

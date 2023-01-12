@@ -438,6 +438,7 @@ class BaseModelAdmin(SQLModelCrud):
             #     "tooltip": _("Export Excel")
             # },
             # {"type": "reload", "align": "right", "className": "datetable-action-refresh-btn-cls"},
+            {"type": "reload", "align": "right", "className": "datetable-action-refresh-btn-cls"},
             {
                 "type": "export-excel",
                 "align": "right",
@@ -446,7 +447,6 @@ class BaseModelAdmin(SQLModelCrud):
                 "className": "datetable-action-export-btn-cls",
                 "tooltip": _("Export Excel")
             },
-            {"type": "reload", "align": "right", "className": "datetable-action-refresh-btn-cls"},
             {"type": "bulkActions", "align": "right"}
         ]
         headerToolbar.extend(headerToolbarright)
