@@ -1,0 +1,986 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-08-21 15:13+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: ../apps/admin/admin.py:40 ../apps/admin/admin.py:59
+msgid "Data Explore"
+msgstr "数据浏览"
+
+#: ../apps/admin/admin.py:66
+msgid "Data Source"
+msgstr "数据源"
+
+#: ../apps/admin/admin.py:78
+msgid "DataSources"
+msgstr "数据源"
+
+#: /utils/amis_admin/admin/admin.py:646 /utils/amis_admin/admin/admin.py:650
+msgid "Bulk Create"
+msgstr "批量新增"
+
+#: ../apps/admin/admin.py:118 ../apps/admin/admin.py:129 /apps/admin/admin_implements/git_repoadmin.py:41
+#: /apps/admin/admin_implements/jobadmin.py:35 /apps/admin/admin_implements/credential_typeadmin.py:35
+#: /apps/admin/admin_implements/credentialadmin.py:35 /apps/admin/admin_implements/host_inventoryadmin.py:35
+#: /apps/admin/admin_implements/hostadmin.py:67 /apps/admin/admin_implements/inventoryadmin.py:35
+#: /apps/admin/admin_implements/job_templateadmin.py:35 /apps/admin/admin_implements/playbookadmin.py:35
+#: /apps/admin/admin_implements/projectadmin.py:35 /apps/admin/admin_implements/scheduleadmin.py:35
+msgid "Cancel"
+msgstr "取消"
+
+#: ../apps/admin/admin.py:120 ../apps/admin/admin.py:132 /apps/admin/admin_implements/git_repoadmin.py:42
+#: /apps/admin/admin_implements/jobadmin.py:36 /apps/admin/admin_implements/credential_typeadmin.py:36
+#: /apps/admin/admin_implements/credentialadmin.py:36 /apps/admin/admin_implements/host_inventoryadmin.py:35
+#: /apps/admin/admin_implements/hostadmin.py:68 /apps/admin/admin_implements/inventoryadmin.py:36
+#: /apps/admin/admin_implements/job_templateadmin.py:36 /apps/admin/admin_implements/playbookadmin.py:35
+#: /apps/admin/admin_implements/projectadmin.py:36 /apps/admin/admin_implements/scheduleadmin.py:36
+msgid "Submit"
+msgstr "提交"
+
+#: ../apps/admin/admin.py:119 ../apps/admin/admin.py:130
+msgid "Test Connection"
+msgstr "测试连接"
+
+#: ../apps/admin/admin.py:131
+msgid "Confirm to sync all tables immediately?"
+msgstr "确认立刻同步所有表结构吗？"
+
+#: ../apps/admin/admin.py:131
+msgid "Sync Structure"
+msgstr "同步表结构"
+
+#: ../apps/admin/admin.py:143
+msgid "Datasource Config"
+msgstr "数据源配置"
+
+#: ../apps/admin/admin.py:185
+msgid "Table Meta"
+msgstr "表结构"
+
+#: /utils/amis_admin/admin/admin.py:634 /utils/amis_admin/admin/admin.py:638
+msgid "Create"
+msgstr "新增"
+
+#: ../apps/admin/admin.py:216 ../apps/admin/admin.py:235
+#: ../apps/admin/admin.py:276 ../apps/admin/admin.py:295
+msgid "Basic Info"
+msgstr "基本信息"
+
+#: ../apps/admin/admin.py:245
+msgid "Page Define"
+msgstr "页面定义"
+
+#: ../apps/admin/admin.py:306 ../apps/admin/admin.py:316
+msgid "APIDocs"
+msgstr "API文档"
+
+#: ../apps/admin/admin.py:307
+msgid "Docs"
+msgstr "文档"
+
+#: ../apps/admin/admin.py:317
+msgid "Redocs"
+msgstr "ReDoc"
+
+#: ../apps/admin/admin.py:66
+msgid "Data Query"
+msgstr "数据查询"
+
+#: ../apps/admin/admin.py:469
+msgid "> Run"
+msgstr "> 执行"
+
+#: ../apps/admin/admin.py:473
+msgid "Select DataSource"
+msgstr "选择数据源"
+
+#: ../apps/admin/admin.py:476
+msgid "DSName"
+msgstr "数据源名称"
+
+#: ../apps/admin/admin.py:476
+msgid "DSURI"
+msgstr "数据库URI"
+
+#: ../apps/admin/admin.py:476
+msgid "SQL Editor"
+msgstr "SQL编辑器"
+
+#: ../apps/admin/apis.py:37 ../apps/admin/apis.py:51
+msgid "Get column options Error"
+msgstr "获取参数失败"
+
+#: ../apps/admin/apis.py:66
+msgid "DataBase Connected"
+msgstr "数据库连接成功"
+
+#: ../apps/admin/apis.py:70
+msgid "DataBase Connect Error"
+msgstr "数据库连接失败"
+
+#: ../apps/admin/apis.py:100
+msgid "DataBase synchronized"
+msgstr "表结构同步成功"
+
+#: ../apps/admin/apis.py:103
+msgid "DataBase synchronized Error"
+msgstr "表结构同步同步错误"
+
+#: ../apps/admin/models/datasource.py:32 ../apps/admin/models/dsmeta.py:52
+#: ../apps/admin/models/dspage.py:75
+msgid "DatasourceID"
+msgstr "数据源ID"
+
+#: ../apps/admin/models/datasource.py:34
+msgid "DatasourceName"
+msgstr "数据源名称"
+
+#: ../apps/admin/models/datasource.py:38
+msgid "URI"
+msgstr "连接URI"
+
+#: ../apps/admin/models/datasource.py:41 ../apps/admin/models/dsmeta.py:34
+#: ../apps/admin/models/dspage.py:40
+msgid "Schema"
+msgstr "Schema"
+
+#: ../apps/admin/models/datasource.py:42
+msgid "ExcludedTableSpace"
+msgstr "排除的表空间"
+
+#: ../apps/admin/models/datasource.py:43
+msgid "DatasourceConfigID"
+msgstr "数据源配置ID"
+
+#: ../apps/admin/models/datasourceconfig.py:43
+msgid "ConfigID"
+msgstr "配置ID"
+
+#: ../apps/admin/models/datasourceconfig.py:45
+msgid "ConfigName"
+msgstr "配置名称"
+
+#: ../apps/admin/models/datasourceconfig.py:50
+msgid "ApplicationParams"
+msgstr "应用参数"
+
+#: ../apps/admin/models/datasourceconfig.py:73
+msgid "ConnectionParams"
+msgstr "连接参数"
+
+#: ../apps/admin/models/datasourceconfig.py:82
+msgid "SchemaParams"
+msgstr "Schema参数"
+
+#: ../apps/admin/models/datasourceconfig.py:90
+msgid "Please enter the comma-separated table name"
+msgstr "请输入逗号分隔的表名称"
+
+#: ../apps/admin/models/datasourceconfig.py:94
+msgid "QueryParams"
+msgstr "查询参数"
+
+#: ../apps/admin/models/datasourceconfig.py:101
+msgid "AdminParams"
+msgstr "管理参数"
+
+#: ../apps/admin/models/datasourceconfig.py:111
+msgid "SecurityParams"
+msgstr "安全参数"
+
+#: ../apps/admin/models/dsmeta.py:28 ../apps/admin/models/dspage.py:32
+msgid "MetaID"
+msgstr "表结构ID"
+
+#: ../apps/admin/models/dsmeta.py:30 ../apps/admin/models/dsmeta.py:43
+#: ../apps/admin/models/dspage.py:34 /utils/user_auth/auth/models.py:269
+msgid "Name"
+msgstr "名称"
+
+#: ../apps/admin/models/dsmeta.py:36 ../apps/admin/models/dsmeta.py:44
+#: ../apps/admin/models/dspage.py:42
+msgid "Type"
+msgstr "类型"
+
+#: ../apps/admin/models/dsmeta.py:37 ../apps/admin/models/dspage.py:44
+msgid "PrimaryKey"
+msgstr "主键"
+
+#: ../apps/admin/models/dsmeta.py:39 ../apps/admin/models/dspage.py:48
+msgid "Indexes"
+msgstr "索引"
+
+#: ../apps/admin/models/dsmeta.py:42 ../apps/admin/models/dspage.py:51
+msgid "Columns"
+msgstr "列"
+
+#: ../apps/admin/models/dsmeta.py:45
+msgid "Nullable"
+msgstr "可空"
+
+#: ../apps/admin/models/dsmeta.py:46
+msgid "Default"
+msgstr "默认值"
+
+#: ../apps/admin/models/dsmeta.py:47
+msgid "Autoincrement"
+msgstr "自增"
+
+#: ../apps/admin/models/dsmeta.py:48
+msgid "Primarykey"
+msgstr "主键"
+
+#: ../apps/admin/models/dsmeta.py:49
+msgid "PythonType"
+msgstr "Python类型"
+
+#: ../apps/admin/models/dspage.py:38
+msgid "Title"
+msgstr "标题"
+
+#: ../apps/admin/models/dspage.py:46
+msgid "LogicPrimaryKey"
+msgstr "逻辑主键"
+
+#: ../apps/admin/models/dspage.py:53 /models/db_models/playbook.py:28
+#: /models/db_models/inventory.py:28 /models/db_models/schedule.py:31
+#: /models/db_models/job.py:28 /models/db_models/credential.py:28
+#: /models/db_models/credential_type.py:28 /models/db_models/git_repo.py:28
+#: /models/db_models/host.py:29 /models/db_models/host.py:30
+#: /models/db_models/job_template.py:28
+msgid "name"
+msgstr "名称"
+
+#: ../apps/admin/models/dspage.py:55 /models/db_models/playbook.py:35
+#: /models/db_models/job_template.py:49
+msgid "type"
+msgstr "类型"
+
+#: ../apps/admin/models/dspage.py:56
+msgid "nullable"
+msgstr "可空"
+
+#: ../apps/admin/models/dspage.py:58
+msgid "default"
+msgstr "默认值"
+
+#: ../apps/admin/models/dspage.py:60
+msgid "autoincrement"
+msgstr "自增"
+
+#: ../apps/admin/models/dspage.py:62
+msgid "primary_key"
+msgstr "主键"
+
+#: ../apps/admin/models/dspage.py:64
+msgid "pythonType"
+msgstr "Python类型"
+
+#: ../apps/admin/models/dspage.py:53
+msgid "Label"
+msgstr "标题"
+
+#: ../apps/admin/models/dspage.py:60
+msgid "AMIS Form Item"
+msgstr "AMIS_Form_Item"
+
+#: ../apps/admin/models/dspage.py:61
+msgid "AMIS Table Column"
+msgstr "AMIS_Table_Column"
+
+#: ../apps/admin/models/dspage.py:71
+msgid "ListDisplay"
+msgstr "列表显示字段"
+
+#: ../apps/admin/models/dspage.py:73
+msgid "SearchFields"
+msgstr "模糊搜索字段"
+
+#: /utils/user_auth/admin.py:254 /utils/user_auth/auth/auth.py:253 /utils/user_auth/site.py:41 /utils/user_auth/site.py:43
+msgid "User Profile"
+msgstr "用户信息"
+
+#: ../core/adminsite.py:67 /utils/user_auth/auth/auth.py:261 /utils/user_auth/site.py:56
+msgid "Sign out"
+msgstr "退出登录"
+
+#: /apps/admin/admin.py:44
+msgid "Home"
+msgstr "首页"
+
+#: /apps/admin/admin.py:76
+msgid "Current:"
+msgstr "当前:"
+
+#: /apps/admin/admin.py:81
+msgid "All:"
+msgstr "全部:"
+
+#: /apps/admin/admin.py:101
+msgid "No Data Found"
+msgstr "暂无数据"
+
+#: ../apps/admin/admin.py:110
+msgid "<p>Capricornus DataSource Wizard</p>"
+msgstr "<p>Capricornus 使用向导</p>"
+
+#: ../apps/admin/admin.py:118
+msgid "Step 1: Create DataSource"
+msgstr "第一步: 连接数据源"
+
+#: ../apps/admin/admin.py:122
+msgid "DataSource Name"
+msgstr "数据源名称"
+
+#: ../apps/admin/admin.py:131
+msgid "DataSource URI"
+msgstr "连接URI"
+
+
+#: ../apps/admin/admin.py:147
+msgid "Exclude Tablespaces"
+msgstr "排除的表空间"
+
+#: ../apps/admin/admin.py:169
+msgid "Step 2: Synchronize Data Structure"
+msgstr "第二步: 同步数据结构"
+
+#: ../apps/admin/admin.py:197
+msgid "Step 3: Enjoy Your REST API"
+msgstr "第三步: 使用API"
+
+#: ../apps/admin/admin.py:201
+msgid "<p>Good Job ! Now, enjoy your REST API by change the APP_PROFILE in your Environment variables to your DataSource Name.</p>"
+msgstr "<p>真棒！现在，修改环境变量APP_PROFILE的值为你的数据源名称并重新启动Capricornus，享受你的 REST API 吧……</p>"
+
+#: ../apps/admin/apis.py:48
+msgid "Table"
+msgstr "表"
+
+#: ../apps/admin/apis.py:49
+msgid "Number of Tables"
+msgstr "系统表数量"
+
+#: ../apps/admin/apis.py:57
+msgid "Number of Views"
+msgstr "系统视图数量"
+
+#: ../apps/admin/apis.py:65
+msgid "Number of APIs"
+msgstr "系统API数量"
+
+#: /utils/user_auth/admin.py:285
+msgid "User"
+msgstr "用户"
+
+#: ../apps/admin/apis.py:73
+msgid "Number of Users"
+msgstr "系统用户数量"
+
+#: ../apps/admin/apis.py:170
+msgid "DataSource Created"
+msgstr "数据源创建成功"
+
+
+
+#: /apps/admin/apis.py:103
+msgid "Get datasource select options Error"
+msgstr "数据源选择错误"
+
+#: /utils/amis_admin/admin/admin.py:238 /utils/amis_admin/admin/admin.py:254 /utils/amis_admin/admin/admin.py:257
+msgid "Add Association"
+msgstr "添加关联"
+
+#: /utils/amis_admin/admin/admin.py:240
+msgid "Are you sure you want to add the association?"
+msgstr "您确定要添加关联吗?"
+
+#: /utils/amis_admin/admin/admin.py:280
+msgid "Remove Association"
+msgstr "删除关联"
+
+#: /utils/amis_admin/admin/admin.py:282
+msgid "Are you sure you want to remove the association?"
+msgstr "您确定要删除关联吗?"
+
+#: /utils/amis_admin/admin/admin.py:438
+msgid "Export Excel"
+msgstr "导出Excel"
+
+#: /utils/amis_admin/admin/admin.py:459
+msgid "SHOWING ${items|count} OF ${total} RESULT${IF(total>1,'S','')}"
+msgstr "展示 ${items|count} ,总计 ${total} 条"
+
+#: /utils/amis_admin/admin/admin.py:524
+msgid "Filter"
+msgstr "筛选"
+
+#: /utils/amis_admin/admin/admin.py:531
+msgid "Clear"
+msgstr "清除"
+
+#: /utils/amis_admin/admin/admin.py:536
+msgid "Reset"
+msgstr "重置"
+
+#: /utils/amis_admin/admin/admin.py:539
+msgid "Search"
+msgstr "搜索"
+
+#: /utils/amis_admin/admin/admin.py:614 /utils/amis_admin/admin/admin.py:617
+msgid "View"
+msgstr "查看"
+
+#: /utils/amis_admin/admin/admin.py:673 /utils/amis_admin/admin/admin.py:675
+msgid "Update"
+msgstr "编辑"
+
+
+#: /utils/amis_admin/admin/admin.py:707
+msgid "Bulk Delete"
+msgstr "批量删除"
+
+#: /utils/amis_admin/admin/admin.py:709
+msgid "Are you sure you want to delete the selected rows?"
+msgstr "您确定要删除选定的行吗?"
+
+#: /utils/amis_admin/admin/admin.py:717
+msgid "Delete"
+msgstr "删除"
+
+#: /utils/amis_admin/admin/admin.py:718
+msgid "Are you sure you want to delete row ${%s}?"
+msgstr "您确定要删除行${%s}吗?"
+
+#: /utils/amis_admin/admin/admin.py:1158 /utils/amis_admin/admin/admin.py:1177
+msgid "Custom form actions"
+msgstr "自定义表单操作"
+
+#: /utils/amis_admin/admin/parser.py:182
+msgid "YES"
+msgstr "是"
+
+#: /utils/amis_admin/admin/parser.py:183
+msgid "NO"
+msgstr "否"
+
+#: /utils/user_auth/admin.py:35
+msgid "Welcome to login AgileOps"
+msgstr "欢迎登录AgileOps"
+
+#: /utils/user_auth/admin.py:90
+msgid "User logged in!"
+msgstr "用户已登录！"
+
+#: /utils/user_auth/admin.py:93 /utils/user_auth/auth/auth.py:306
+msgid "Incorrect username or password!"
+msgstr "用户名或密码错误!"
+
+#: /utils/user_auth/admin.py:95
+msgid "Inactive user status!"
+msgstr "用户状态异常!"
+
+#: /utils/user_auth/admin.py:132
+msgid "Sign in"
+msgstr "登录"
+
+#: /utils/user_auth/admin.py:305
+msgid "Role"
+msgstr "角色"
+
+#: /utils/user_auth/admin.py:312
+msgid "Group"
+msgstr "分组"
+
+#: /utils/user_auth/admin.py:319
+msgid "Permission"
+msgstr "权限"
+
+#: /utils/user_auth/app.py:20
+msgid "User Authentication"
+msgstr "用户身份验证"
+
+#: /utils/user_auth/auth/models.py:25
+msgid "Create Time"
+msgstr "创建时间"
+
+#: /utils/user_auth/auth/models.py:31
+msgid "Update Time"
+msgstr "修改时间"
+
+#: /utils/user_auth/auth/models.py:37
+msgid "Username"
+msgstr "用户名"
+
+#: /utils/user_auth/auth/models.py:45
+msgid "Password"
+msgstr "密码"
+
+#: /utils/user_auth/auth/models.py:53
+msgid "Email"
+msgstr "邮箱"
+
+#: /utils/user_auth/auth/models.py:146
+msgid "Is Active"
+msgstr "活跃"
+
+#: /utils/user_auth/auth/models.py:147
+msgid "Nickname"
+msgstr "昵称"
+
+#: /utils/user_auth/auth/models.py:150
+msgid "Avatar"
+msgstr "Avatar"
+
+#: /utils/user_auth/auth/models.py:268
+msgid "Identify"
+msgstr "身份"
+
+#: /utils/user_auth/auth/models.py:270
+msgid "Description"
+msgstr "描述"
+
+#: auth/models.py:213 /utils/user_auth/auth/models.py:285
+msgid "Parent"
+msgstr "父级"
+
+#: /utils/user_auth/auth/schemas.py:24
+msgid "Confirm Password"
+msgstr "确认密码"
+
+#: /models/db_models/playbook.py:27
+msgid "playbook_id"
+msgstr "脚本"
+
+#: /models/db_models/playbook.py:29 /models/db_models/inventory.py:29
+#: /models/db_models/schedule.py:32 /models/db_models/job.py:29
+#: /models/db_models/credential.py:29 /models/db_models/credential_type.py:29
+#: /models/db_models/git_repo.py:29 /models/db_models/host.py:41
+#: /models/db_models/host.py:42 /models/db_models/job_template.py:29
+msgid "description"
+msgstr "描述"
+
+#: /models/db_models/playbook.py:30
+msgid "path"
+msgstr "路径"
+
+#: /models/db_models/playbook.py:32 /models/db_models/host.py:67
+msgid "tag"
+msgstr "标签"
+
+#: /models/db_models/playbook.py:33
+msgid "download_url"
+msgstr "下载路径"
+
+#: /models/db_models/playbook.py:34
+msgid "sha"
+msgstr "sha"
+
+#: /models/db_models/host_inventory.py:27
+msgid "id"
+msgstr "ID"
+
+#: /models/db_models/host_inventory.py:28 /models/db_models/host.py:28
+msgid "host_id"
+msgstr "主机"
+
+#: /models/db_models/host_inventory.py:29 /models/db_models/inventory.py:27
+#: /models/db_models/job_template.py:31
+msgid "inventory_id"
+msgstr "清单"
+
+#: /models/db_models/inventory.py:30 /models/db_models/credential.py:30
+msgid "organization_id"
+msgstr "机构"
+
+#: /models/db_models/inventory.py:31 /models/db_models/credential_type.py:30
+msgid "kind"
+msgstr "类型"
+
+#: /models/db_models/inventory.py:32
+msgid "awx_inventory_id"
+msgstr "清单"
+
+#: /models/db_models/inventory.py:33 /models/db_models/schedule.py:36
+#: /models/db_models/credential.py:33 /models/db_models/credential_type.py：32
+#: /models/db_models/host.py:61 /models/db_models/host.py:62
+#: /models/db_models/job_template.py:43
+msgid "created"
+msgstr "创建时间"
+
+#: /models/db_models/inventory.py:34 /models/db_models/schedule.py:37
+#: /models/db_models/credential.py:34 /models/db_models/credential_type.py：32
+#: /models/db_models/host.py:64 /models/db_models/host.py:65
+#: /models/db_models/job_template.py:44
+msgid "modified"
+msgstr "修改时间"
+
+#: /models/db_models/schedule.py:27
+msgid "schedule_id"
+msgstr "计划任务ID"
+
+#: /models/db_models/schedule.py:28
+msgid "rrule"
+msgstr "时间规则"
+
+#: /models/db_models/schedule.py:29
+msgid "cron"
+msgstr ""
+
+#: /models/db_models/schedule.py:30 /models/db_models/job.py:38 /models/db_models/job_template.py:27
+msgid "job_template_id"
+msgstr "作业模板ID"
+
+#: /models/db_models/schedule.py:33 /models/db_models/host.py:44 /models/db_models/host.py:45
+msgid "enabled"
+msgstr "可用性"
+
+#: /models/db_models/schedule.py:34
+msgid "extra_data"
+msgstr ""
+
+msgid "schedule"
+msgstr "定时作业"
+
+msgid "start_time"
+msgstr "起始执行时间"
+
+msgid "next_run"
+msgstr "下次执行时间"
+
+msgid "unit"
+msgstr "执行频率"
+
+msgid "interval"
+msgstr "执行间隔"
+
+msgid "host_group_name"
+msgstr "主机组"
+
+msgid "ssh_key_data"
+msgstr "SSH私钥"
+
+#: /models/db_models/schedule.py:35
+msgid "awx_schedule_id"
+msgstr "计划任务ID"
+
+#: /models/db_models/job.py:27
+msgid "job_id"
+msgstr "任务ID"
+
+#: /models/db_models/job.py:30
+msgid "unified_job_template"
+msgstr ""
+
+#: /models/db_models/job.py:31
+msgid "launch_type"
+msgstr ""
+
+#: /models/db_models/job.py:32 /models/db_models/job_template.py:48
+msgid "status"
+msgstr "状态"
+
+#: /models/db_models/job.py:33
+msgid "failed"
+msgstr "失败时间"
+
+#: /models/db_models/job.py:34
+msgid "started"
+msgstr "开始时间"
+
+#: /models/db_models/job.py:35
+msgid "finished"
+msgstr "完成时间"
+
+#: /models/db_models/job.py:36
+msgid "canceled_on"
+msgstr "取消时间"
+
+#: /models/db_models/job.py:37
+msgid "elapsed"
+msgstr "运行耗时(秒)"
+
+#: /models/db_models/job.py:39
+msgid "awx_job_id"
+msgstr "作业ID"
+
+#: /models/db_models/credential.py:27
+msgid "credential_id"
+msgstr "凭证"
+
+#: /models/db_models/credential.py:31 /models/db_models/credential_type.py:27
+msgid "credential_type_id"
+msgstr "凭证类型"
+
+#: /models/db_models/credential.py:32
+msgid "awx_credential_id"
+msgstr "凭证"
+
+#: /models/db_models/credential_type.py:31
+msgid "awx_credential_type_id"
+msgstr "凭证类型"
+
+#: /models/db_models/git_repo.py:27 /models/db_models/playbook.py:31
+msgid "git_repo_id"
+msgstr "仓库"
+
+#: /models/db_models/git_repo.py:30
+msgid "default_branch"
+msgstr "默认分支"
+
+#: /models/db_models/git_repo.py:31 /models/db_models/git_repo.py:32
+msgid "private"
+msgstr "是否私有"
+
+#: /models/db_models/git_repo.py:33
+msgid "public"
+msgstr "是否公有"
+
+#: /models/db_models/git_repo.py:36
+msgid "html_url"
+msgstr "HTML URL"
+
+#: /models/db_models/git_repo.py:37
+msgid "ssh_url"
+msgstr "SSH URL"
+
+#: /models/db_models/git_repo.py:38
+msgid "clone_url"
+msgstr "克隆URL"
+
+#: /models/db_models/git_repo.py:39
+msgid "owner"
+msgstr "拥有者"
+
+#: /models/db_models/git_repo.py:
+msgid "gitea_repo_id"
+msgstr "仓库"
+
+msgid "host_name"
+msgstr "主机名"
+
+msgid "ssh_port"
+msgstr "SSH端口"
+
+#: /models/db_models/host.py:46
+msgid "Enabled"
+msgstr "可用"
+
+#: /models/db_models/host.py:47
+msgid "Disabled"
+msgstr "不可用"
+
+#: /models/db_models/host.py:50
+msgid "url"
+msgstr "路径"
+
+#: /models/db_models/host.py:53
+msgid "ip"
+msgstr "IP"
+
+#: /models/db_models/host.py:55
+msgid "username"
+msgstr "用户名"
+
+#: /models/db_models/host.py:57
+msgid "password"
+msgstr "密码"
+
+#: /models/db_models/host.py:59
+msgid "awx_host_id"
+msgstr "主机"
+
+#: /models/db_models/job_template.py:30
+msgid "job_type"
+msgstr "作业类型"
+
+#: /models/db_models/job_template.py:32
+msgid "project_id"
+msgstr "项目"
+
+#: /models/db_models/job_template.py:33
+msgid "playbook"
+msgstr "脚本"
+
+#: /models/db_models/job_template.py:34
+msgid "scm_branch"
+msgstr "分支"
+
+#: /models/db_models/job_template.py:35
+msgid "forks"
+msgstr "并行数"
+
+#: /models/db_models/job_template.py:36
+msgid "limit"
+msgstr "limit"
+
+#: /models/db_models/job_template.py:37
+msgid "verbosity"
+msgstr "详细程度"
+
+#: /models/db_models/job_template.py:38
+msgid "job_tags"
+msgstr "标签"
+
+#: /models/db_models/job_template.py:39
+msgid "timeout"
+msgstr "超时时间"
+
+#: /models/db_models/job_template.py:40
+msgid "job_slice_count"
+msgstr "作业分片数"
+
+#: /models/db_models/job_template.py:41
+msgid "awx_job_template_id"
+msgstr "作业模板"
+
+#: /models/db_models/job_template.py:42
+msgid "extra_vars"
+msgstr "参数"
+
+#: /models/db_models/job_template.py:45
+msgid "last_job_run"
+msgstr "上次执行时间"
+
+#: /models/db_models/job_template.py:46
+msgid "last_job_failed"
+msgstr "上次失败时间"
+
+#: /models/db_models/job_template.py:47
+msgid "next_job_run"
+msgstr "下次执行时间"
+
+#: /models/db_models/job_template.py:50
+msgid "level"
+msgstr "级别"
+
+#: /utils/CodeGenerator/tmpl/awx_api_tmpl.py:64 /utils/CodeGenerator/tmpl/awx_api_tmpl.py:93
+msgid "Success"
+msgstr "成功"
+
+#: /apps/admin/admin.py:120
+msgid "Host Admin"
+msgstr "主机管理"
+
+#: /apps/admin/admin.py:131
+msgid "Asset Admin"
+msgstr "资产管理"
+
+#: /apps/admin/admin.py:131
+msgid "playbook admin"
+msgstr "脚本管理"
+
+#: /apps/admin/admin.py:141
+msgid "Job Admin"
+msgstr "作业管理"
+
+#: /apps/admin/admin.py:153
+msgid "Health Check Admin"
+msgstr "巡检管理"
+
+#: /apps/admin/admin.py:165
+msgid "System Admin"
+msgstr "系统管理"
+
+msgid "DR Admin"
+msgstr "容灾切换"
+
+#: /apps/admin/admin_implements/projectadmin.py:23
+msgid "project"
+msgstr "项目"
+
+#: /apps/admin/admin_implements/jobadmin.py:23
+msgid "job"
+msgstr "作业"
+
+#: /apps/admin/admin_implements/credentialadmin.py:23
+msgid "credential"
+msgstr "凭证"
+
+#: /apps/admin/admin_implements/inventoryadmin.py:23
+msgid "inventory"
+msgstr "清单"
+
+#: /apps/admin/admin_implements/hostadmin.py:28
+msgid "host"
+msgstr "主机"
+
+#: /apps/admin/admin_implements/credential_typeadmin.py:23
+msgid "credential_type"
+msgstr "凭证类型"
+
+#: /apps/admin/admin_implements/git_repoadmin.py:31
+msgid "git_repo"
+msgstr "脚本仓库"
+
+#: /apps/admin/admin_implements/job_templateadmin.py:23
+msgid "job_template"
+msgstr "作业模板"
+
+#: /apps/admin/admin_implements/host_inventoryadmin.py:23
+msgid "host_inventory"
+msgstr "主机列表"
+
+#: /apps/admin/admin.py:219
+msgid "AmisEditor"
+msgstr "Amis编辑器"
+
+#: /apps/admin/admin.py:212
+msgid "AmisDocument"
+msgstr "Amis文档"
+
+#: /models/db_models/inventory.py:36
+msgid "source_path"
+msgstr "数据源"
+
+#: /models/db_models/playbook.py:50
+msgid "file"
+msgstr "文件"
+
+#: /apps/admin/admin_implements/job_templateadmin.py:52
+msgid "Are you sure to launch the job?"
+msgstr "确定发起作业吗?"
+
+#: /apps/admin/admin_implements/job_templateadmin.py:52
+msgid "launch the job"
+msgstr "发起作业"
+
+#: /apps/admin/admin_implements/jobadmin.py:47
+msgid "Are you sure you want to cancel the job?"
+msgstr "确定取消作业吗?"
+
+#: /apps/admin/admin_implements/jobadmin.py:47
+msgid "cancel the job"
+msgstr "取消作业"
+
+#: /apps/admin/admin_implements/jobadmin.py:82
+msgid "job cancelled successfully"
+msgstr "作业取消成功"
+
+#: /apps/admin/admin_implements/jobadmin.py:84
+msgid "job cancelled failure"
+msgstr "作业取消失败"
+
+#: /apps/admin/admin_implements/job_templateadmin.py:100
+msgid "the job has been launched"
+msgstr "作业已发起"
+
+#: /apps/admin/admin_implements/job_templateadmin.py:102
+msgid "job launch failure"
+msgstr "作业发起失败"
+
+#: /apps/admin/admin_implements/jobadmin.py:99 /apps/admin/admin_implements/jobadmin.py:103
+msgid "job log"
+msgstr "作业日志"

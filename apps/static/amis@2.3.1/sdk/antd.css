@@ -1,0 +1,415 @@
+/*! 按钮 */
+.cxd-Button.cxd-Button--primary {
+  border-radius: 0px;
+  background-color: #0f62FE;
+  border-color: #0f62FE;
+  height: 40px;
+}
+.cxd-Button.cxd-Button--default {
+  border-radius: 0px;
+  background-color: #393939;
+  border-color: #393939;
+  color: white;
+  height: 40px;
+}
+.cxd-Button.cxd-Button--danger {
+  border-radius: 0px;
+  background-color: #DA1E28;
+  border-color: #DA1E28;
+  color: white;
+  height: 40px;
+}
+.cxd-Button.cxd-Button--success {
+  border-radius: 0px;
+  background-color: #30BF13;
+  border-color: #30BF13;
+  height: 40px;
+}
+.cxd-Button.cxd-Button--secondary {
+  border-radius: 0px;
+  background-color: #393939;
+  border-color: #393939;
+  color: white;
+  height: 40px;
+}
+.cxd-Button.cxd-Button--warning {
+  border-radius: 0px;
+  background-color: #FF9326;
+  border-color: #FF9326;
+  color: white;
+  height: 40px;
+}
+.cxd-Button.cxd-Button--light {
+  border-radius: 0px;
+  background-color: #EAF6FE;
+  border-color: #EAF6FE;
+  color: white;
+  height: 40px;
+}
+.cxd-Button.cxd-Button--dark {
+  border-radius: 0px;
+  background-color: #393939;
+  border-color: #393939;
+  color: white;
+  height: 40px;
+}
+
+/* 列表按钮 */
+.amis-scope .cxd-ListControl-item {
+  border-radius: 0px;
+  background-color: white;
+  border-color: white;
+  color: black;
+}
+.amis-scope .cxd-ListControl-item:hover {
+  border-radius: 0px;
+  background-color: #E8E8E8;
+  border-color: #E8E8E8;
+  color: black;
+}
+.amis-scope .cxd-ListControl-item:hover:active, .amis-scope .cxd-ListControl-item.is-active {
+  border-radius: 0px;
+  background-color: #E0E0E0;
+  border-color: #E0E0E0;
+  color: black;
+}
+.amis-scope .cxd-ListControl-item:hover:active:after, .amis-scope .cxd-ListControl-item.is-active:after, .amis-scope .cxd-ListControl-item:hover:active:before, .amis-scope .cxd-ListControl-item.is-active:before {
+  display: none;
+  background: none;
+}
+
+/* 下拉选框 */
+.amis-scope .cxd-Select {
+  border-bottom: 1px solid #626262;
+  background-color: #F4F4F4;
+  border-radius: 0px;
+  height: 40px;
+}
+.amis-scope .cxd-Select .cxd-PopOver.cxd-Select-popover .cxd-Select-menu {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #E5E5E5;
+}
+.amis-scope .cxd-Select .cxd-PopOver.cxd-Select-popover .cxd-Select-menu .cxd-Select-option {
+  background-color: #E5E5E5;
+}
+.amis-scope .cxd-Select .cxd-PopOver.cxd-Select-popover .cxd-Select-menu .cxd-Select-option:hover, .amis-scope .cxd-Select .cxd-PopOver .cxd-Select-menu .cxd-Select-option.is-highlight:hover > span {
+  background-color: #767676;
+  color: white;
+}
+
+/* 各种选择器 */
+.amis-scope .cxd-ColorPicker, .amis-scope .cxd-DatePicker, .amis-scope .cxd-DateRangePicker {
+  border-bottom: 1px solid #626262;
+  background-color: #F4F4F4;
+  border-radius: 0px;
+  height: 40px;
+}
+
+/* 图片上传 */
+.amis-scope .cxd-ImageControl-addBtn {
+  border: 1px dashed #767676;
+  border-radius: 0px;
+}
+
+/* 多行输入 */
+.amis-scope .cxd-TextareaControl > textarea {
+  border-bottom: 1px solid #626262;
+  background-color: #F4F4F4;
+  border-radius: 0px;
+}
+
+/* 穿梭器 */
+.amis-scope .cxd-Transfer-select, .amis-scope .cxd-Transfer-result {
+  border-radius: 0px;
+}
+
+/* 树 */
+.amis-scope .cxd-TreeControl {
+  border-radius: 0px;
+}
+
+/* 树选择器 */
+.amis-scope .cxd-TreeSelectControl, .amis-scope .cxd-NestedSelectControl {
+  border-bottom: 1px solid #626262;
+  border-radius: 0px;
+  height: 40px;
+}
+.amis-scope .cxd-ResultBox.is-clickable:not(.is-disabled) {
+  background-color: #F4F4F4;
+}
+.amis-scope .cxd-TreeSelectControl .cxd-PopOver .cxd-Tree {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #E5E5E5;
+}
+.amis-scope .cxd-Tree-itemLabel:hover, .amis-scope .cxd-Tree-itemText:hover {
+  background-color: #767676;
+  color: white;
+}
+
+/* form */
+.cxd-Panel.cxd-Panel--default.cxd-Panel--form, .amis-scope .cxd-Panel-btnToolbar {
+  border-radius: 0px;
+  border: none;
+}
+
+/*! 字体 */
+.amis-scope, .az-content-title, .az-content-breadcrumb {
+ font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/*! 输入框 */
+.amis-scope .cxd-TextControl-input {
+  border-bottom: 1px solid #626262;
+  background-color: #F4F4F4;
+  border-radius: 0px;
+  height: 40px;
+}
+.amis-scope .cxd-TextControl-input--multiple .cxd-TextControl-value {
+  background-color: #C9DEFF;
+  color: #4A7EE8;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+.amis-scope .cxd-TextControl--withAddOn, .amis-scope .cxd-TextControl--withAddOn > .cxd-TextControl-input:first-child { 
+  border-bottom: 1px solid #626262;
+  background-color: #F4F4F4;
+  border-radius: 0px;
+  height: 40px;
+}
+.amis-scope .cxd-TextControl-addOn:last-child {
+  border-radius: 0px;
+}
+.amis-scope .cxd-Number {
+  border-radius: 0px;
+}
+
+/* 单选 */
+.amis-scope .cxd-Checkbox--radio > i, .amis-scope .cxd-Checkbox:hover input:not(:disabled) + i {
+  border-color: black;
+}
+
+/* 标签 */
+.amis-scope .cxd-TagControl, .amis-scope .cxd-ResultBox {
+  border-bottom: 1px solid #626262;
+  background-color: #F4F4F4;
+  border-radius: 0px;
+  height: 40px;
+}
+.amis-scope .cxd-ResultBox-value {
+  background-color: #C9DEFF;
+  color: #4A7EE8;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+
+/* 多选 */
+.amis-scope .cxd-Checkbox--checkbox > i {
+  border-color: black;
+  border-radius: 0px;
+}
+
+/* 范围 */
+.amis-scope .cxd-InputRange-handle-icon, .amis-scope .cxd-InputRange-handle-drage, .amis-scope .cxd-InputRange-track-active {
+  background-color: #161616;
+  border-color: #161616;
+}
+.amis-scope .cxd-InputRange-handle .icon-slider-handle {
+  width: 0px;
+  height: 0px;
+}
+
+/* 进度条 */
+.amis-scope .bg-success {
+  background-color: #161616;
+  color: #161616;
+}
+
+/* tabs */
+.amis-scope .cxd-Tabs--line > .cxd-Tabs-linksWrapper > .cxd-Tabs-links > li:not(.is-disabled) a:first-child, .amis-scope .cxd-Tabs--line > .cxd-Tabs-linksContainer-wrapper > .cxd-Tabs-linksContainer > .cxd-Tabs-linksContainer-main > .cxd-Tabs-links > li:not(.is-disabled) a:first-child {
+  color: black;
+}
+.amis-scope .cxd-Tabs--line > .cxd-Tabs-linksWrapper > .cxd-Tabs-links > li:not(.is-disabled):hover a:first-child, .amis-scope .cxd-Tabs--line > .cxd-Tabs-linksContainer-wrapper > .cxd-Tabs-linksContainer > .cxd-Tabs-linksContainer-main > .cxd-Tabs-links > li:not(.is-disabled):hover a:first-child {
+  color: black;
+}
+.amis-scope .cxd-Tabs--tiled > .cxd-Tabs-linksContainer-wrapper > .cxd-Tabs-linksContainer > .cxd-Tabs-linksContainer-main > .cxd-Tabs-links > li {
+  background-color: #E0E0E0;
+  padding: 0px;
+  border-right: 1px solid #A8A8A8;
+  border-left: 1px solid #A8A8A8;
+  height: 40px;
+  text-align: center;
+}
+.amis-scope .cxd-Tabs--tiled > .cxd-Tabs-linksContainer-wrapper > .cxd-Tabs-linksContainer > .cxd-Tabs-linksContainer-main > .cxd-Tabs-links > li > a {
+  text-align: center;
+  line-height: 35px;
+}
+.amis-scope .cxd-Tabs--vertical > .cxd-Tabs-linksWrapper > .cxd-Tabs-links > li.is-active > a:first-child, .amis-scope .cxd-Tabs--vertical > .cxd-Tabs-linksWrapper > .cxd-Tabs-links > li.is-active > a:first-child:hover, .amis-scope .cxd-Tabs--vertical > .cxd-Tabs-linksWrapper > .cxd-Tabs-links > li.is-active > a:first-child:focus {
+  color: black;
+  font-weight: 600;
+}
+
+/* 搜索 */
+.amis-scope .cxd-InputBox {
+  border-bottom: 1px solid #626262;
+  background-color: #F4F4F4;
+  border-radius: 0px;
+  height: 40px;
+}
+
+/* 表单编辑-标签 */
+.amis-scope .cxd-Picker .cxd-Picker-value {
+  background-color: #C9DEFF;
+  color: #4A7EE8;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+.amis-scope .cxd-Picker-input {
+  border-bottom: 1px solid #626262;
+  background-color: #F4F4F4;
+  border-radius: 0px;
+  height: 40px;
+}
+
+/* 数字输入框 */
+.amis-scope .cxd-Number-input {
+  background-color: #F4F4F4;
+  border-radius: 0px;
+  height: 40px;
+}
+
+/* 锚点导航 */
+.amis-scope .cxd-AnchorNav--vertical .cxd-AnchorNav-link-wrap > .cxd-AnchorNav-link.is-active > a, .amis-scope .cxd-AnchorNav--vertical .cxd-AnchorNav-link-wrap > .cxd-AnchorNav-link.is-active > a:hover {
+  color: black;
+  font-weight: 600;
+}
+
+/* Dialog */
+.amis-scope .cxd-Modal-content.in {
+  padding: 0px;
+}
+.amis-scope .cxd-Modal-title {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.amis-scope .cxd-Modal-header + .cxd-Modal-body {
+  margin-left: 20px;
+}
+.amis-scope .cxd-Modal-close:not(.is-disabled):hover svg {
+  margin-top: 15px;
+  margin-right: 15px;
+}
+.amis-scope .cxd-Modal-close svg {
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+/*! Modal */
+.amis-scope .cxd-Modal-content {
+  border-radius: 0px;
+  padding-bottom: 0px;
+}
+.amis-scope .cxd-Modal-footer {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.amis-scope .cxd-Modal-footer .cxd-Button {
+  margin-left: 0px;
+  width: 50%;
+  height: 50px;
+  border: 0px;
+}
+.amis-scope .cxd-Button--default:not(:disabled):not(.is-disabled):hover {
+  color: white;
+  background-color: #393939;
+  border-color: #0f62FE;
+}
+
+/*! 抽屉 */
+.amis-scope .cxd-Drawer-footer {
+  padding: 0px 0px 0px 0px;
+}
+.amis-scope .cxd-Drawer--right .cxd-Drawer-footer .cxd-Button {
+  margin-left: 0px;
+  width: 50%;
+  height: 50px;
+  border: 0px;
+  margin-right: 0px;
+}
+.amis-scope .cxd-Drawer--left .cxd-Drawer-footer .cxd-Button {
+  margin-left: 0px;
+  width: 50%;
+  height: 50px;
+  border: 0px;
+  margin-right: 0px;
+}
+.amis-scope .cxd-Button--default:not(:disabled):not(.is-disabled):hover {
+  color: white;
+  background-color: #393939;
+  border-color: #0f62FE;
+}
+
+/*! datatable */
+/*! 1.action btn */
+/* .cxd-Button.cxd-Button--default.cxd-Button--iconOnly.is-disabled.datetable-action-btn-cls {
+  background-color : white;
+  border-color: white;
+  position: relative;
+  top: 15px;
+  left: 520px;
+  color: gray;
+  margin-left: 0px;
+}
+.cxd-Button.cxd-Button--default.cxd-Button--iconOnly.datetable-action-btn-cls {
+  background-color : white;
+  border-color: white;
+  position: relative;
+  top: 11px;
+  left: 520px;
+  color: black;
+  margin-left: 0px;
+}
+.cxd-Button.cxd-Button--default.cxd-Button--iconOnly.datetable-action-btn-cls:hover {
+  background-color : white;
+  border-color: white;
+  position: relative;
+  left: 520px;
+  color: #0f62FE;
+  margin-left: 0px;
+} */
+/*! 2.筛选按钮 */
+.amis-scope .cxd-Button--default.cxd-Button--sm:not(:disabled):not(.is-disabled):hover {
+  background-color : white;
+  border-color: white;
+  /* position: relative;
+  top: 3px;
+  left: 540px; */
+  color: #0f62FE;
+  margin-left: 0px;
+}
+.cxd-Button.cxd-Button--default.cxd-Button--sm {
+  background-color : white;
+  border-color: white;
+  /* position: relative;
+  top: 3px;
+  left: 540px; */
+  color: #393939;
+  margin-left: 0px;
+}
+/*! 3.新建按钮 */
+/* .cxd-Button.cxd-Button--primary.new-item-btn {
+  position: relative;
+  left: 519px;
+  top: 10px;
+} */
+/*! 4.其他 */
+/* #table.amis-scope {
+  height: 400px;
+}
+.cxd-Container-body {
+  padding-bottom: 10px;
+} */
+

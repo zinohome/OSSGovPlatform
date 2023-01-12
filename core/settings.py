@@ -33,13 +33,9 @@ class Settings(AmisSettings):
     server_name: str = 'OSSGov-server'
     server_core_origins: str = '[*]'
 
-    # jaeger 配置
-    jaeger_host: str = '127.0.0.1'
-
     # API配置
     api_prefix: str = "/api/v1"
     api_access_token_expire_minutes: int = 60 * 24 * 7
-    api_ansible_backend: str = 'AWX'
     api_debug: bool = False
 
 
@@ -55,6 +51,4 @@ if __name__ == '__main__':
     print(settings.secret_key)
     print(settings.amis_cdn)
     print(settings.database_url_async)
-    print(settings.awx_api_url)
-    print(settings.semph_api_url)
     print(settings.allow_origins)

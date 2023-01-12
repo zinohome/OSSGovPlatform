@@ -1,0 +1,966 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-08-21 15:13+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: ../apps/admin/admin.py:40 ../apps/admin/admin.py:59
+msgid "Data Explore"
+msgstr "Data Explore"
+
+#: ../apps/admin/admin.py:66
+msgid "Data Source"
+msgstr "Data Source"
+
+#: ../apps/admin/admin.py:78
+msgid "DataSources"
+msgstr "DataSources"
+
+#: /utils/amis_admin/admin/admin.py:646 /utils/amis_admin/admin/admin.py:650
+msgid "Bulk Create"
+msgstr "Bulk Create"
+
+#: ../apps/admin/admin.py:118 ../apps/admin/admin.py:129 /apps/admin/admin_implements/git_repoadmin.py:41
+#: /apps/admin/admin_implements/jobadmin.py:35 /apps/admin/admin_implements/credential_typeadmin.py:35
+#: /apps/admin/admin_implements/credentialadmin.py:35 /apps/admin/admin_implements/host_inventoryadmin.py:35
+#: /apps/admin/admin_implements/hostadmin.py:67 /apps/admin/admin_implements/inventoryadmin.py:35
+#: /apps/admin/admin_implements/job_templateadmin.py:35 /apps/admin/admin_implements/playbookadmin.py:35
+#: /apps/admin/admin_implements/projectadmin.py:35 /apps/admin/admin_implements/scheduleadmin.py:35
+msgid "Cancel"
+msgstr "Cancel"
+
+#: ../apps/admin/admin.py:120 ../apps/admin/admin.py:132 /apps/admin/admin_implements/git_repoadmin.py:42
+#: /apps/admin/admin_implements/jobadmin.py:36 /apps/admin/admin_implements/credential_typeadmin.py:36
+#: /apps/admin/admin_implements/credentialadmin.py:36 /apps/admin/admin_implements/host_inventoryadmin.py:35
+#: /apps/admin/admin_implements/hostadmin.py:68 /apps/admin/admin_implements/inventoryadmin.py:36
+#: /apps/admin/admin_implements/job_templateadmin.py:36 /apps/admin/admin_implements/playbookadmin.py:35
+#: /apps/admin/admin_implements/projectadmin.py:36 /apps/admin/admin_implements/scheduleadmin.py:36
+msgid "Submit"
+msgstr "Submit"
+
+#: ../apps/admin/admin.py:119 ../apps/admin/admin.py:130
+msgid "Test Connection"
+msgstr "Test Connection"
+
+#: ../apps/admin/admin.py:131
+msgid "Confirm to sync all tables immediately?"
+msgstr "Confirm to sync all tables immediately?"
+
+#: ../apps/admin/admin.py:131
+msgid "Sync Structure"
+msgstr "Sync Structure"
+
+#: ../apps/admin/admin.py:143
+msgid "Datasource Config"
+msgstr "Datasource Config"
+
+#: ../apps/admin/admin.py:185
+msgid "Table Meta"
+msgstr "Table Meta"
+
+#: /utils/amis_admin/admin/admin.py:634 /utils/amis_admin/admin/admin.py:638
+msgid "Create"
+msgstr "Create"
+
+#: ../apps/admin/admin.py:216 ../apps/admin/admin.py:235
+#: ../apps/admin/admin.py:276 ../apps/admin/admin.py:295
+msgid "Basic Info"
+msgstr "Basic Info"
+
+#: ../apps/admin/admin.py:245
+msgid "Page Define"
+msgstr "Page Define"
+
+#: ../apps/admin/admin.py:306 ../apps/admin/admin.py:316
+msgid "APIDocs"
+msgstr "APIDocs"
+
+#: ../apps/admin/admin.py:307
+msgid "Docs"
+msgstr "Swagger"
+
+#: ../apps/admin/admin.py:317
+msgid "Redocs"
+msgstr "ReDoc"
+
+#: ../apps/admin/admin.py:66
+msgid "Data Query"
+msgstr "Data Query"
+
+#: ../apps/admin/admin.py:469
+msgid "> Run"
+msgstr "> Run"
+
+#: ../apps/admin/admin.py:473
+msgid "Select DataSource"
+msgstr "Select DataSource"
+
+#: ../apps/admin/admin.py:476
+msgid "DSName"
+msgstr "DSName"
+
+#: ../apps/admin/admin.py:476
+msgid "DSURI"
+msgstr "DSURI"
+
+#: ../apps/admin/admin.py:476
+msgid "SQL Editor"
+msgstr "SQL Editor"
+
+#: ../apps/admin/apis.py:37 ../apps/admin/apis.py:51
+msgid "Get column options Error"
+msgstr "Get column options Error"
+
+#: ../apps/admin/apis.py:66
+msgid "DataBase Connected"
+msgstr "DataBase Connected"
+
+#: ../apps/admin/apis.py:70
+msgid "DataBase Connect Error"
+msgstr "DataBase Connect Error"
+
+#: ../apps/admin/apis.py:100
+msgid "DataBase synchronized"
+msgstr "DataBase synchronized"
+
+#: ../apps/admin/apis.py:103
+msgid "DataBase synchronized Error"
+msgstr "DataBase synchronized Error"
+
+#: ../apps/admin/models/datasource.py:32 ../apps/admin/models/dsmeta.py:52
+#: ../apps/admin/models/dspage.py:75
+msgid "DatasourceID"
+msgstr "DatasourceID"
+
+#: ../apps/admin/models/datasource.py:34
+msgid "DatasourceName"
+msgstr "DatasourceName"
+
+#: ../apps/admin/models/datasource.py:38
+msgid "URI"
+msgstr "URI"
+
+#: ../apps/admin/models/datasource.py:41 ../apps/admin/models/dsmeta.py:34
+#: ../apps/admin/models/dspage.py:40
+msgid "Schema"
+msgstr "Schema"
+
+#: ../apps/admin/models/datasource.py:42
+msgid "ExcludedTableSpace"
+msgstr "ExcludedTableSpace"
+
+#: ../apps/admin/models/datasource.py:43
+msgid "DatasourceConfigID"
+msgstr "DatasourceConfigID"
+
+#: ../apps/admin/models/datasourceconfig.py:43
+msgid "ConfigID"
+msgstr "ConfigID"
+
+#: ../apps/admin/models/datasourceconfig.py:45
+msgid "ConfigName"
+msgstr "ConfigName"
+
+#: ../apps/admin/models/datasourceconfig.py:50
+msgid "ApplicationParams"
+msgstr "ApplicationParams"
+
+#: ../apps/admin/models/datasourceconfig.py:73
+msgid "ConnectionParams"
+msgstr "ConnectionParams"
+
+#: ../apps/admin/models/datasourceconfig.py:82
+msgid "SchemaParams"
+msgstr "SchemaParams"
+
+#: ../apps/admin/models/datasourceconfig.py:90
+msgid "Please enter the comma-separated table name"
+msgstr "Please enter the comma-separated table name"
+
+#: ../apps/admin/models/datasourceconfig.py:94
+msgid "QueryParams"
+msgstr "QueryParams"
+
+#: ../apps/admin/models/datasourceconfig.py:101
+msgid "AdminParams"
+msgstr "AdminParams"
+
+#: ../apps/admin/models/datasourceconfig.py:111
+msgid "SecurityParams"
+msgstr "SecurityParams"
+
+#: ../apps/admin/models/dsmeta.py:28 ../apps/admin/models/dspage.py:32
+msgid "MetaID"
+msgstr "MetaID"
+
+#: ../apps/admin/models/dsmeta.py:30 ../apps/admin/models/dsmeta.py:43
+#: ../apps/admin/models/dspage.py:34 /utils/user_auth/auth/models.py:269
+msgid "Name"
+msgstr "Name"
+
+#: ../apps/admin/models/dsmeta.py:36 ../apps/admin/models/dsmeta.py:44
+#: ../apps/admin/models/dspage.py:42
+msgid "Type"
+msgstr "Type"
+
+#: ../apps/admin/models/dsmeta.py:37 ../apps/admin/models/dspage.py:44
+msgid "PrimaryKey"
+msgstr "PrimaryKey"
+
+#: ../apps/admin/models/dsmeta.py:39 ../apps/admin/models/dspage.py:48
+msgid "Indexes"
+msgstr "Indexes"
+
+#: ../apps/admin/models/dsmeta.py:42 ../apps/admin/models/dspage.py:51
+msgid "Columns"
+msgstr "Columns"
+
+#: ../apps/admin/models/dsmeta.py:45
+msgid "Nullable"
+msgstr "Nullable"
+
+#: ../apps/admin/models/dsmeta.py:46
+msgid "Default"
+msgstr "Default"
+
+#: ../apps/admin/models/dsmeta.py:47
+msgid "Autoincrement"
+msgstr "Autoincrement"
+
+#: ../apps/admin/models/dsmeta.py:48
+msgid "Primarykey"
+msgstr "Primarykey"
+
+#: ../apps/admin/models/dsmeta.py:49
+msgid "PythonType"
+msgstr "PythonType"
+
+#: ../apps/admin/models/dspage.py:38
+msgid "Title"
+msgstr "Title"
+
+#: ../apps/admin/models/dspage.py:46
+msgid "LogicPrimaryKey"
+msgstr "LogicPrimaryKey"
+
+#: ../apps/admin/models/dspage.py:53 /models/db_models/playbook.py:28
+#: /models/db_models/inventory.py:28 /models/db_models/schedule.py:31
+#: /models/db_models/job.py:28 /models/db_models/credential.py:28
+#: /models/db_models/credential_type.py:28 /models/db_models/git_repo.py:28
+#: /models/db_models/host.py:29 /models/db_models/host.py:30
+#: /models/db_models/job_template.py:28
+msgid "name"
+msgstr "name"
+
+#: ../apps/admin/models/dspage.py:55 /models/db_models/playbook.py:35
+#: /models/db_models/job_template.py:49
+msgid "type"
+msgstr "type"
+
+#: ../apps/admin/models/dspage.py:56
+msgid "nullable"
+msgstr "nullable"
+
+#: ../apps/admin/models/dspage.py:58
+msgid "default"
+msgstr "default"
+
+#: ../apps/admin/models/dspage.py:60
+msgid "autoincrement"
+msgstr "autoincrement"
+
+#: ../apps/admin/models/dspage.py:62
+msgid "primary_key"
+msgstr "primary_key"
+
+#: ../apps/admin/models/dspage.py:64
+msgid "pythonType"
+msgstr "pythonType"
+
+#: ../apps/admin/models/dspage.py:53
+msgid "Label"
+msgstr "Label"
+
+#: ../apps/admin/models/dspage.py:60
+msgid "AMIS Form Item"
+msgstr "AMIS_Form_Item"
+
+#: ../apps/admin/models/dspage.py:61
+msgid "AMIS Table Column"
+msgstr "AMIS_Table_Column"
+
+#: ../apps/admin/models/dspage.py:71
+msgid "ListDisplay"
+msgstr "ListDisplay"
+
+#: ../apps/admin/models/dspage.py:73
+msgid "SearchFields"
+msgstr "SearchFields"
+
+#: /utils/user_auth/admin.py:254 /utils/user_auth/auth/auth.py:253 /utils/user_auth/site.py:41 /utils/user_auth/site.py:43
+msgid "User Profile"
+msgstr "User Profile"
+
+#: ../core/adminsite.py:67 /utils/user_auth/auth/auth.py:261 /utils/user_auth/site.py:56
+msgid "Sign out"
+msgstr "Sign out"
+
+#: /apps/admin/admin.py:44
+msgid "Home"
+msgstr "Home"
+
+#: /apps/admin/admin.py:76
+msgid "Current:"
+msgstr "Current:"
+
+#: /apps/admin/admin.py:81
+msgid "All:"
+msgstr "All:"
+
+#: /apps/admin/admin.py:101
+msgid "No Data Found"
+msgstr "No Data Found"
+
+#: ../apps/admin/admin.py:110
+msgid "<p>Capricornus DataSource Wizard</p>"
+msgstr "<p>Capricornus DataSource Wizard</p>"
+
+#: ../apps/admin/admin.py:118
+msgid "Step 1: Create DataSource"
+msgstr "Step 1: Create DataSource"
+
+#: ../apps/admin/admin.py:122
+msgid "DataSource Name"
+msgstr "DataSource Name"
+
+#: ../apps/admin/admin.py:131
+msgid "DataSource URI"
+msgstr "DataSource URI"
+
+
+#: ../apps/admin/admin.py:147
+msgid "Exclude Tablespaces"
+msgstr "Exclude Tablespaces"
+
+#: ../apps/admin/admin.py:169
+msgid "Step 2: Synchronize Data Structure"
+msgstr "Step 2: Synchronize Data Structure"
+
+#: ../apps/admin/admin.py:197
+msgid "Step 3: Enjoy Your REST API"
+msgstr "Step 3: Enjoy Your REST API"
+
+#: ../apps/admin/admin.py:201
+msgid "<p>Good Job ! Now, enjoy your REST API by change the APP_PROFILE in your Environment variables to your DataSource Name.</p>"
+msgstr "<p>Good Job ! Now, enjoy your REST API by change the APP_PROFILE in your Environment variables to your DataSource Name.</p>"
+
+#: ../apps/admin/apis.py:48
+msgid "Table"
+msgstr "Table"
+
+#: ../apps/admin/apis.py:49
+msgid "Number of Tables"
+msgstr "Number of Tables"
+
+#: ../apps/admin/apis.py:57
+msgid "Number of Views"
+msgstr "Number of Views"
+
+#: ../apps/admin/apis.py:67
+msgid "Number of APIs"
+msgstr "Number of APIs"
+
+#: /utils/user_auth/admin.py:285
+msgid "User"
+msgstr "User"
+
+#: ../apps/admin/apis.py:73
+msgid "Number of Users"
+msgstr "Number of Users"
+
+#: ../apps/admin/apis.py:170
+msgid "DataSource Created"
+msgstr "DataSource Created"
+
+
+
+#: /apps/admin/apis.py:103
+msgid "Get datasource select options Error"
+msgstr "Get datasource select options Error"
+
+#: /utils/amis_admin/admin/admin.py:238 /utils/amis_admin/admin/admin.py:254 /utils/amis_admin/admin/admin.py:257
+msgid "Add Association"
+msgstr "Add Association"
+
+#: /utils/amis_admin/admin/admin.py:240
+msgid "Are you sure you want to add the association?"
+msgstr "Are you sure you want to add the association?"
+
+#: /utils/amis_admin/admin/admin.py:280
+msgid "Remove Association"
+msgstr "Remove Association"
+
+#: /utils/amis_admin/admin/admin.py:282
+msgid "Are you sure you want to remove the association?"
+msgstr "Are you sure you want to remove the association?"
+
+#: /utils/amis_admin/admin/admin.py:438
+msgid "Export Excel"
+msgstr "Export Excel"
+
+#: /utils/amis_admin/admin/admin.py:459
+msgid "SHOWING ${items|count} OF ${total} RESULT${IF(total>1,'S','')}"
+msgstr "SHOWING ${items|count} OF ${total} RESULT${IF(total>1,'S','')}"
+
+#: /utils/amis_admin/admin/admin.py:524
+msgid "Filter"
+msgstr "Filter"
+
+#: /utils/amis_admin/admin/admin.py:531
+msgid "Clear"
+msgstr "Clear"
+
+#: /utils/amis_admin/admin/admin.py:536
+msgid "Reset"
+msgstr "Reset"
+
+#: /utils/amis_admin/admin/admin.py:539
+msgid "Search"
+msgstr "Search"
+
+#: /utils/amis_admin/admin/admin.py:614 /utils/amis_admin/admin/admin.py:617
+msgid "View"
+msgstr "View"
+
+#: /utils/amis_admin/admin/admin.py:673 /utils/amis_admin/admin/admin.py:675
+msgid "Update"
+msgstr "Update"
+
+
+#: /utils/amis_admin/admin/admin.py:707
+msgid "Bulk Delete"
+msgstr "Bulk Delete"
+
+#: /utils/amis_admin/admin/admin.py:709
+msgid "Are you sure you want to delete the selected rows?"
+msgstr "Are you sure you want to delete the selected rows?"
+
+#: /utils/amis_admin/admin/admin.py:717
+msgid "Delete"
+msgstr "Delete"
+
+#: /utils/amis_admin/admin/admin.py:718
+msgid "Are you sure you want to delete row ${%s}?"
+msgstr "Are you sure you want to delete row ${%s}?"
+
+#: /utils/amis_admin/admin/admin.py:1158 /utils/amis_admin/admin/admin.py:1177
+msgid "Custom form actions"
+msgstr "Custom form actions"
+
+#: /utils/amis_admin/admin/parser.py:182
+msgid "YES"
+msgstr "YES"
+
+#: /utils/amis_admin/admin/parser.py:183
+msgid "NO"
+msgstr "NO"
+
+#: /utils/user_auth/admin.py:35
+msgid "Welcome to login AgileOps"
+msgstr "Welcome to login AgileOps"
+
+#: /utils/user_auth/admin.py:90
+msgid "User logged in!"
+msgstr "User logged in!"
+
+#: /utils/user_auth/admin.py:93 /utils/user_auth/auth/auth.py:306
+msgid "Incorrect username or password!"
+msgstr "Incorrect username or password!"
+
+#: /utils/user_auth/admin.py:95
+msgid "Inactive user status!"
+msgstr "Inactive user status!"
+
+#: /utils/user_auth/admin.py:132
+msgid "Sign in"
+msgstr "Sign in"
+
+#: /utils/user_auth/admin.py:305
+msgid "Role"
+msgstr "Role"
+
+#: /utils/user_auth/admin.py:312
+msgid "Group"
+msgstr "Group"
+
+#: /utils/user_auth/admin.py:319
+msgid "Permission"
+msgstr "Permission"
+
+#: /utils/user_auth/app.py:20
+msgid "User Authentication"
+msgstr "User Authentication"
+
+#: /utils/user_auth/auth/models.py:25
+msgid "Create Time"
+msgstr "Create Time"
+
+#: /utils/user_auth/auth/models.py:31
+msgid "Update Time"
+msgstr "Update Time"
+
+#: /utils/user_auth/auth/models.py:37
+msgid "Username"
+msgstr "Username"
+
+#: /utils/user_auth/auth/models.py:45
+msgid "Password"
+msgstr "Password"
+
+#: /utils/user_auth/auth/models.py:53
+msgid "Email"
+msgstr "Email"
+
+#: /utils/user_auth/auth/models.py:146
+msgid "Is Active"
+msgstr "Is Active"
+
+#: /utils/user_auth/auth/models.py:147
+msgid "Nickname"
+msgstr "Nickname"
+
+#: /utils/user_auth/auth/models.py:150
+msgid "Avatar"
+msgstr "Avatar"
+
+#: /utils/user_auth/auth/models.py:268
+msgid "Identify"
+msgstr "Identify"
+
+#: /utils/user_auth/auth/models.py:270
+msgid "Description"
+msgstr "Description"
+
+#: auth/models.py:213 /utils/user_auth/auth/models.py:285
+msgid "Parent"
+msgstr "Parent"
+
+#: /utils/user_auth/auth/schemas.py:24
+msgid "Confirm Password"
+msgstr "Confirm Password"
+
+#: /models/db_models/playbook.py:27
+msgid "playbook_id"
+msgstr "Playbook ID"
+
+#: /models/db_models/playbook.py:29 /models/db_models/inventory.py:29
+#: /models/db_models/schedule.py:32 /models/db_models/job.py:29
+#: /models/db_models/credential.py:29 /models/db_models/credential_type.py:29
+#: /models/db_models/git_repo.py:29 /models/db_models/host.py:41
+#: /models/db_models/host.py:42 /models/db_models/job_template.py:29
+msgid "description"
+msgstr "Description"
+
+#: /models/db_models/playbook.py:30
+msgid "path"
+msgstr "Path"
+
+#: /models/db_models/playbook.py:32 /models/db_models/host.py:67
+msgid "tag"
+msgstr "Tag"
+
+#: /models/db_models/playbook.py:33
+msgid "download_url"
+msgstr "Download URL"
+
+#: /models/db_models/playbook.py:34
+msgid "sha"
+msgstr ""
+
+#: /models/db_models/host_inventory.py:27
+msgid "id"
+msgstr "ID"
+
+#: /models/db_models/host_inventory.py:28 /models/db_models/host.py:28
+msgid "host_id"
+msgstr "Host ID"
+
+#: /models/db_models/host_inventory.py:29 /models/db_models/inventory.py:27
+#: /models/db_models/job_template.py:31
+msgid "inventory_id"
+msgstr "Inventory ID"
+
+#: /models/db_models/inventory.py:30 /models/db_models/credential.py:30
+msgid "organization_id"
+msgstr "Organization ID"
+
+#: /models/db_models/inventory.py:31 /models/db_models/credential_type.py:30
+msgid "kind"
+msgstr "Kind"
+
+#: /models/db_models/inventory.py:32
+msgid "awx_inventory_id"
+msgstr "AWS Inventory ID"
+
+#: /models/db_models/inventory.py:33 /models/db_models/schedule.py:36
+#: /models/db_models/credential.py:33 /models/db_models/credential_type.py：32
+#: /models/db_models/host.py:61 /models/db_models/host.py:62
+#: /models/db_models/job_template.py:43
+msgid "created"
+msgstr "Created"
+
+#: /models/db_models/inventory.py:34 /models/db_models/schedule.py:37
+#: /models/db_models/credential.py:34 /models/db_models/credential_type.py：32
+#: /models/db_models/host.py:64 /models/db_models/host.py:65
+#: /models/db_models/job_template.py:44
+msgid "modified"
+msgstr "Modified"
+
+#: /models/db_models/schedule.py:27
+msgid "schedule_id"
+msgstr "Schedule ID"
+
+#: /models/db_models/schedule.py:28
+msgid "rrule"
+msgstr ""
+
+#: /models/db_models/schedule.py:29
+msgid "cron"
+msgstr "Cron"
+
+#: /models/db_models/schedule.py:30 /models/db_models/job.py:38 /models/db_models/job_template.py:27
+msgid "job_template_id"
+msgstr "Job Template ID"
+
+#: /models/db_models/schedule.py:33 /models/db_models/host.py:44 /models/db_models/host.py:45
+msgid "enabled"
+msgstr "Enabled"
+
+#: /models/db_models/schedule.py:34
+msgid "extra_data"
+msgstr "Extra Data"
+
+#: /models/db_models/schedule.py:35
+msgid "awx_schedule_id"
+msgstr "AWS Schedule ID"
+
+#: /models/db_models/job.py:27
+msgid "job_id"
+msgstr "Job ID"
+
+#: /models/db_models/job.py:30
+msgid "unified_job_template"
+msgstr "Unified Job Template"
+
+#: /models/db_models/job.py:31
+msgid "launch_type"
+msgstr "Launch Type"
+
+#: /models/db_models/job.py:32 /models/db_models/job_template.py:48
+msgid "status"
+msgstr "Status"
+
+#: /models/db_models/job.py:33
+msgid "failed"
+msgstr "Failed"
+
+#: /models/db_models/job.py:34
+msgid "started"
+msgstr "Started"
+
+#: /models/db_models/job.py:35
+msgid "finished"
+msgstr "Finished"
+
+#: /models/db_models/job.py:36
+msgid "canceled_on"
+msgstr "Canceled"
+
+#: /models/db_models/job.py:37
+msgid "elapsed"
+msgstr "Elapsed"
+
+#: /models/db_models/job.py:39
+msgid "awx_job_id"
+msgstr "AWS Job ID"
+
+#: /models/db_models/credential.py:27
+msgid "credential_id"
+msgstr "Credential ID"
+
+#: /models/db_models/credential.py:31 /models/db_models/credential_type.py:27
+msgid "credential_type_id"
+msgstr "Credential Type ID"
+
+#: /models/db_models/credential.py:32
+msgid "awx_credential_id"
+msgstr "AWS Credential ID"
+
+#: /models/db_models/credential_type.py:31
+msgid "awx_credential_type_id"
+msgstr "AWS Credential Type ID"
+
+#: /models/db_models/git_repo.py:27 /models/db_models/playbook.py:31
+msgid "git_repo_id"
+msgstr "Git Repo ID"
+
+#: /models/db_models/git_repo.py:30
+msgid "default_branch"
+msgstr "Default Branch"
+
+#: /models/db_models/git_repo.py:31 /models/db_models/git_repo.py:32
+msgid "private"
+msgstr "Private"
+
+#: /models/db_models/git_repo.py:33
+msgid "public"
+msgstr "Public"
+
+#: /models/db_models/git_repo.py:36
+msgid "html_url"
+msgstr "HTML URL"
+
+#: /models/db_models/git_repo.py:37
+msgid "ssh_url"
+msgstr "SSH URL"
+
+#: /models/db_models/git_repo.py:38
+msgid "clone_url"
+msgstr "Clone URL"
+
+#: /models/db_models/git_repo.py:39
+msgid "owner"
+msgstr "Owner"
+
+#: /models/db_models/git_repo.py:
+msgid "gitea_repo_id"
+msgstr "Gitea Repo ID"
+
+msgid "host_name"
+msgstr "Host Name"
+
+msgid "ssh_port"
+msgstr "SSH Port"
+
+#: /models/db_models/host.py:46
+msgid "Enabled"
+msgstr "Enabled"
+
+#: /models/db_models/host.py:47
+msgid "Disabled"
+msgstr "Disabled"
+
+#: /models/db_models/host.py:50
+msgid "url"
+msgstr "URL"
+
+#: /models/db_models/host.py:53
+msgid "ip"
+msgstr "IP"
+
+#: /models/db_models/host.py:55
+msgid "username"
+msgstr "Username"
+
+#: /models/db_models/host.py:57
+msgid "password"
+msgstr "Password"
+
+#: /models/db_models/host.py:59
+msgid "awx_host_id"
+msgstr "AWS Host ID"
+
+#: /models/db_models/job_template.py:30
+msgid "job_type"
+msgstr "Job Type"
+
+#: /models/db_models/job_template.py:32
+msgid "project_id"
+msgstr "Project ID"
+
+#: /models/db_models/job_template.py:33
+msgid "playbook"
+msgstr "Playbook"
+
+#: /models/db_models/job_template.py:34
+msgid "scm_branch"
+msgstr ""
+
+#: /models/db_models/job_template.py:35
+msgid "forks"
+msgstr "Forks"
+
+#: /models/db_models/job_template.py:36
+msgid "limit"
+msgstr "Limit"
+
+#: /models/db_models/job_template.py:37
+msgid "verbosity"
+msgstr "Verbosity"
+
+#: /models/db_models/job_template.py:38
+msgid "job_tags"
+msgstr "Job Tags"
+
+#: /models/db_models/job_template.py:39
+msgid "timeout"
+msgstr "Timeout"
+
+#: /models/db_models/job_template.py:40
+msgid "job_slice_count"
+msgstr "Job Slice Count"
+
+#: /models/db_models/job_template.py:41
+msgid "awx_job_template_id"
+msgstr "AWS Job Template ID"
+
+#: /models/db_models/job_template.py:42
+msgid "extra_vars"
+msgstr "Extra Vars"
+
+#: /models/db_models/job_template.py:45
+msgid "last_job_run"
+msgstr "Last Job Run"
+
+#: /models/db_models/job_template.py:46
+msgid "last_job_failed"
+msgstr "Last Job Failed"
+
+#: /models/db_models/job_template.py:47
+msgid "next_job_run"
+msgstr "Next Job Run"
+
+#: /models/db_models/job_template.py:50
+msgid "level"
+msgstr "Level"
+
+#: /utils/CodeGenerator/tmpl/awx_api_tmpl.py:64 /utils/CodeGenerator/tmpl/awx_api_tmpl.py:93
+msgid "Success"
+msgstr "Success"
+
+#: /apps/admin/admin.py:120
+msgid "Host Admin"
+msgstr "Host Admin"
+
+#: /apps/admin/admin.py:131
+msgid "Repo Admin"
+msgstr "Repo Admin"
+
+#: /apps/admin/admin.py:131
+msgid "playbook admin"
+msgstr "Playbook Admin"
+
+#: /apps/admin/admin.py:141
+msgid "Job Admin"
+msgstr "Job Admin"
+
+#: /apps/admin/admin.py:153
+msgid "Health Check Admin"
+msgstr "Health Check Admin"
+
+#: /apps/admin/admin.py:165
+msgid "System Admin"
+msgstr "System Admin"
+
+msgid "DR Admin"
+msgstr "DR Admin"
+
+#: /apps/admin/admin_implements/projectadmin.py:23
+msgid "project"
+msgstr "Project"
+
+#: /apps/admin/admin_implements/jobadmin.py:23
+msgid "job"
+msgstr "Job"
+
+#: /apps/admin/admin_implements/credentialadmin.py:23
+msgid "credential"
+msgstr "Credential"
+
+#: /apps/admin/admin_implements/inventoryadmin.py:23
+msgid "inventory"
+msgstr "Inventory"
+
+#: /apps/admin/admin_implements/hostadmin.py:28
+msgid "host"
+msgstr "Host"
+
+#: /apps/admin/admin_implements/credential_typeadmin.py:23
+msgid "credential_type"
+msgstr "Credential Type"
+
+#: /apps/admin/admin_implements/git_repoadmin.py:31
+msgid "git_repo"
+msgstr "Git Repo"
+
+#: /apps/admin/admin_implements/job_templateadmin.py:23
+msgid "job_template"
+msgstr "Job Template"
+
+#: /apps/admin/admin_implements/host_inventoryadmin.py:23
+msgid "host_inventory"
+msgstr "Host Inventory"
+
+#: /apps/admin/admin.py:219
+msgid "AmisEditor"
+msgstr "Amis Editor"
+
+#: /apps/admin/admin.py:212
+msgid "AmisDocument"
+msgstr "Amis Document"
+
+#: /models/db_models/inventory.py:36
+msgid "source_path"
+msgstr "Source Path"
+
+#: /models/db_models/playbook.py:50
+msgid "file"
+msgstr "File"
+
+#: /apps/admin/admin_implements/job_templateadmin.py:52
+msgid "Are you sure to launch the job?"
+msgstr "Are you sure to launch the job?"
+
+#: /apps/admin/admin_implements/job_templateadmin.py:52
+msgid "launch the job"
+msgstr "Launch the job"
+
+#: /apps/admin/admin_implements/jobadmin.py:47
+msgid "Are you sure you want to cancel the job?"
+msgstr "Are you sure you want to cancel the job?"
+
+#: /apps/admin/admin_implements/jobadmin.py:47
+msgid "cancel the job"
+msgstr "Cancel the job"
+
+#: /apps/admin/admin_implements/jobadmin.py:82
+msgid "job cancelled successfully"
+msgstr "Job cancelled successfully"
+
+#: /apps/admin/admin_implements/jobadmin.py:84
+msgid "job cancelled failure"
+msgstr "Job cancelled failure"
+
+#: /apps/admin/admin_implements/job_templateadmin.py:100
+msgid "the job has been launched"
+msgstr "The job has been launched"
+
+#: /apps/admin/admin_implements/job_templateadmin.py:102
+msgid "job launch failure"
+msgstr "Job launch failure"
+
+
+#: /apps/admin/admin_implements/jobadmin.py:99 /apps/admin/admin_implements/jobadmin.py:103
+msgid "job log"
+msgstr "Job Log"

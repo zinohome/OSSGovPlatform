@@ -31,4 +31,5 @@ fastapi_user_auth>=0.4.1
 pybase64>=1.2.3
 jaeger-client>=4.8.0
 Starlette-OpenTracing>=0.1.0
+opentracing_instrumentation>=3.3.1
 asgiref>=3.5.2
