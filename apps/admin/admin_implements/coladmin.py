@@ -11,11 +11,11 @@
 import traceback
 import simplejson as json
 from fastapi import Body, Depends
-from sqlalchemy import insert
+from sqlalchemy import insert, delete
 
 from core.adminsite import site
 from models.db_models.pagedef import PageDef
-from utils import datetime_util
+from utils import datetime_util, toolkit
 from utils.amis_admin import amis,admin
 from utils.amis_admin.amis import PageSchema
 from typing import (
@@ -37,6 +37,7 @@ from core import i18n as _
 from utils.crud import BaseApiOut
 from utils.crud.utils import parser_item_id
 from utils.log import log as log
+
 
 class ColAdmin(admin.ModelAdmin):
     # 继承自ModelAdmin，因此ModelAdmin(BaseModelAdmin, PageAdmin) 的方法都可以重写
@@ -73,11 +74,39 @@ class ColAdmin(admin.ModelAdmin):
             if not items:
                 return self.error_data_handle(request)
             try:
-                result = await self.db.async_run_sync(self._create_items, items=items)
-                log.debug(result)
+                if len(items) == 1:
+                    result = await self.db.async_run_sync(self._create_items, items=items)
+                    resultdict = toolkit.object_as_dict(result)
+                    pagedef = PageDef()
+                    setattr(pagedef, 'pagedef_name', resultdict['coldef_name'])
+                    setattr(pagedef, 'pagedef_title', resultdict['coldef_name'])
+                    setattr(pagedef, 'pagedef_col', resultdict['coldef_id'])
+                    setattr(pagedef, 'pagedef', resultdict['coldef'])
+                    setattr(pagedef, 'createdate', resultdict['createdate'])
+                    setattr(pagedef, 'modifiedate', resultdict['modifiedate'])
+                    crtstmt = insert(PageDef).values(pagedef.dict(exclude={"pagedef_id"}))
+                    crtresult = await site.db.session.execute(crtstmt)
+                    log.debug(BaseApiOut(data=crtresult))
+                else:
+                    result = await self.db.async_run_sync(self._create_items_lst, items=items)
+                    for row in result:
+                        resultdict = toolkit.object_as_dict(row)
+                        pagedef = PageDef()
+                        setattr(pagedef, 'pagedef_name', resultdict['coldef_name'])
+                        setattr(pagedef, 'pagedef_title', resultdict['coldef_name'])
+                        setattr(pagedef, 'pagedef_col', resultdict['coldef_id'])
+                        setattr(pagedef, 'pagedef', resultdict['coldef'])
+                        setattr(pagedef, 'createdate', resultdict['createdate'])
+                        setattr(pagedef, 'modifiedate', resultdict['modifiedate'])
+                        crtstmt = insert(PageDef).values(pagedef.dict(exclude={"pagedef_id"}))
+                        crtresult = await site.db.session.execute(crtstmt)
+                        log.debug(BaseApiOut(data=crtresult))
             except Exception as error:
                 return self.error_execute_sql(request=request, error=error)
-            return BaseApiOut(data=result)
+            if len(items) == 1:
+                return BaseApiOut(data=result)
+            else:
+                return BaseApiOut(data=len(result))
         return route
 
     @property
@@ -97,15 +126,17 @@ class ColAdmin(admin.ModelAdmin):
                 return self.error_data_handle(request)
             result = await self.db.async_run_sync(self._update_items, item_id, values)
             pagedef = PageDef()
+            delstmt = delete(PageDef).where(PageDef.pagedef_col == item_id)
+            delresult = await site.db.session.execute(delstmt)
             setattr(pagedef, 'pagedef_name', values['coldef_name'])
             setattr(pagedef, 'pagedef_title', values['coldef_name'])
             setattr(pagedef, 'pagedef_col', item_id)
             setattr(pagedef, 'pagedef', values['coldef'])
             setattr(pagedef, 'createdate', values['createdate'])
             setattr(pagedef, 'modifiedate', values['modifiedate'])
-            stmt = insert(PageDef).values(pagedef.dict(exclude={"pagedef_id"}))
-            pgresult = await site.db.session.execute(stmt)
-            log.debug(pgresult)
+            updstmt = insert(PageDef).values(pagedef.dict(exclude={"pagedef_id"}))
+            updresult = await site.db.session.execute(updstmt)
+            log.debug(BaseApiOut(data=updresult))
             return BaseApiOut(data=result)
         return route
 
@@ -118,5 +149,9 @@ class ColAdmin(admin.ModelAdmin):
             if not await self.has_delete_permission(request, item_ids):
                 return self.error_no_router_permission(request)
             result = await self.db.async_run_sync(self._delete_items, item_ids)
+            for item_id in item_ids:
+                delstmt = delete(PageDef).where(PageDef.pagedef_col == item_id)
+                delresult = await site.db.session.execute(delstmt)
+                log.debug(BaseApiOut(data=delresult))
             return BaseApiOut(data=result)
         return route

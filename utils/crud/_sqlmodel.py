@@ -396,6 +396,18 @@ class SQLModelCrud(BaseCrud, SQLModelSelector):
             return self.schema_model.parse_obj(obj)
         return count
 
+    def _create_items_lst(self, session: Session, items: List[Dict[str, Any]]) -> Union[int, SchemaModelT]:
+        count = len(items)
+        obj = None
+        returnlst = []
+        for item in items:
+            obj = self.create_item(item)
+            session.add(obj)
+            session.flush()
+            session.refresh(obj)
+            returnlst.append(self.schema_model.parse_obj(obj))
+        return returnlst
+
     def _read_items(self, session: Session, item_id: List[str]) -> List[SchemaReadT]:
         items = self._fetch_item_scalars(session, item_id)
         return [self.read_item(obj) for obj in items]

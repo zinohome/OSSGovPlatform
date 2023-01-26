@@ -16,6 +16,7 @@ import re
 from urllib import parse
 import simplejson as json
 import sqlalchemy.types as satypes
+from sqlalchemy import inspect
 from sqlalchemy.engine.url import URL
 from core.settings import settings
 from utils.log import log as log
@@ -86,6 +87,16 @@ def is_json(input_str):
     except:
         return False
 
+def object_as_dict(obj):
+    return {c.key: getattr(obj, c.key)
+            for c in inspect(obj).mapper.column_attrs}
+
+def id_array_to_str(ids):
+    return ','.join(map(str, ids))
 
 if __name__ == '__main__':
-    pass
+    #pass
+    ids = [71,72,73]
+    log.debug(id_array_to_str(ids))
+    ids = [71]
+    log.debug(id_array_to_str(ids))
