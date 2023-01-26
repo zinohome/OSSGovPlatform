@@ -11,7 +11,10 @@
 import traceback
 import simplejson as json
 from fastapi import Body, Depends
+from sqlalchemy import insert
 
+from core.adminsite import site
+from models.db_models.pagedef import PageDef
 from utils import datetime_util
 from utils.amis_admin import amis,admin
 from utils.amis_admin.amis import PageSchema
@@ -42,8 +45,8 @@ class ColAdmin(admin.ModelAdmin):
     model = ColDef
     pk_name = 'coldef_id'
     enable_bulk_create = True
-    list_display = [ColDef.coldef_id, ColDef.coldef_name, ColDef.keyfieldname, ColDef.createdate, ColDef.modifiedate]
-    search_fields = [ColDef.coldef_id, ColDef.coldef_name, ColDef.keyfieldname, ColDef.createdate, ColDef.modifiedate]
+    list_display = [ColDef.coldef_name, ColDef.keyfieldname, ColDef.createdate, ColDef.modifiedate]
+    search_fields = [ColDef.coldef_name, ColDef.keyfieldname, ColDef.createdate, ColDef.modifiedate]
 
     def __init__(self, app: "AdminApp"):
         # 初始化
@@ -71,6 +74,7 @@ class ColAdmin(admin.ModelAdmin):
                 return self.error_data_handle(request)
             try:
                 result = await self.db.async_run_sync(self._create_items, items=items)
+                log.debug(result)
             except Exception as error:
                 return self.error_execute_sql(request=request, error=error)
             return BaseApiOut(data=result)
@@ -92,6 +96,16 @@ class ColAdmin(admin.ModelAdmin):
             if not values:
                 return self.error_data_handle(request)
             result = await self.db.async_run_sync(self._update_items, item_id, values)
+            pagedef = PageDef()
+            setattr(pagedef, 'pagedef_name', values['coldef_name'])
+            setattr(pagedef, 'pagedef_title', values['coldef_name'])
+            setattr(pagedef, 'pagedef_col', item_id)
+            setattr(pagedef, 'pagedef', values['coldef'])
+            setattr(pagedef, 'createdate', values['createdate'])
+            setattr(pagedef, 'modifiedate', values['modifiedate'])
+            stmt = insert(PageDef).values(pagedef.dict(exclude={"pagedef_id"}))
+            pgresult = await site.db.session.execute(stmt)
+            log.debug(pgresult)
             return BaseApiOut(data=result)
         return route
 

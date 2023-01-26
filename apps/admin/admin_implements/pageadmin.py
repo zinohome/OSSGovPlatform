@@ -25,8 +25,8 @@ class PageAdmin(admin.ModelAdmin):
     model = PageDef
     pk_name = 'pagedef_id'
     enable_bulk_create = True
-    list_display = [PageDef.pagedef_id, PageDef.pagedef_name, PageDef.pagedef_col, PageDef.createdate, PageDef.modifiedate]
-    search_fields = [PageDef.pagedef_id, PageDef.pagedef_name, PageDef.pagedef_col, PageDef.createdate, PageDef.modifiedate]
+    list_display = [PageDef.pagedef_name, PageDef.pagedef_title, PageDef.pagedef_col, PageDef.createdate, PageDef.modifiedate]
+    search_fields = [PageDef.pagedef_name, PageDef.pagedef_title, PageDef.pagedef_col, PageDef.createdate, PageDef.modifiedate]
 
     def __init__(self, app: "AdminApp"):
         # 初始化
