@@ -10,6 +10,8 @@
 #  @Software: Practitioner
 
 from fastapi import APIRouter, Depends
+
+from models.db_models.coldef import ColDef
 from utils.user_auth.auth.models import User
 from sqlalchemy import text, select, func
 from sqlalchemy.ext.asyncio import create_async_engine
@@ -88,6 +90,54 @@ async def get_home_statis():
         traceback.print_exc()
         return returndict
 
+# relation model select
+@router.get('/get_relation_model_select_options',
+         tags=["admin"],
+         summary="Get relation model select options list.",
+         description="Return relation model select options list",
+         include_in_schema=True)
+async def get_relation_model_select_options():
+    try:
+        returndict = {'status':1,'msg':_("Get relation mode select options Error")}
+        stmt = select(ColDef)
+        result = (await site.db.async_scalars(stmt)).all()
+        if len(result) > 0:
+            datalist = []
+            for col in result:
+                datalist.append({'label':col.coldef_name,'value':col.coldef_name})
+            returndict['status'] = 0
+            returndict['msg'] = 'Success'
+            returndict['data'] = datalist
+        return returndict
+    except Exception as e:
+        log.error('Get datasource select options Error !')
+        traceback.print_exc()
+        return returndict
+
+# relation model field select
+@router.get('/get_relation_model_field_select_options',
+         tags=["admin"],
+         summary="Get relation model field select options list.",
+         description="Return relation model field select options list",
+         include_in_schema=True)
+async def get_relation_model_field_select_options(coldefname: str):
+    try:
+        returndict = {'status':1,'msg':_("Get relation mode field select options Error")}
+        stmt = select(ColDef).where(ColDef.coldef_name == coldefname)
+        result = (await site.db.async_scalars(stmt)).all()
+        if len(result) == 1:
+            col = result[0]
+            datalist = []
+            for obj in col.coldef:
+                datalist.append({'label': obj['name'], 'value': obj['name']})
+            returndict['status'] = 0
+            returndict['msg'] = 'Success'
+            returndict['data'] = datalist
+        return returndict
+    except Exception as e:
+        log.error('Get datasource select options Error !')
+        traceback.print_exc()
+        return returndict
 """
 Example：get_ds_select_options
 """
