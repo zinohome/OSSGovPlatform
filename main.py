@@ -13,6 +13,7 @@ import os
 import uvicorn
 from asgi_correlation_id import CorrelationIdMiddleware
 
+from core.sysbase import SysBase
 from models.db_models.navdef import NavDef
 from models.db_models.coldef import ColDef
 from models.db_models.pagedef import PageDef
@@ -64,6 +65,9 @@ Database(syncengine).run_sync(SQLModel.metadata.create_all, tables=[metatables['
                                                                     metatables['oss_graphdef'],
                                                                     metatables['auth_token']], is_session=False)
 syncengine.dispose()
+sysbase = SysBase()
+sysbase.initossbase()
+sysbase=None
 
 # API prefix
 prefix = settings.api_prefix

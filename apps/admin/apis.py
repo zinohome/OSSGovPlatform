@@ -12,6 +12,7 @@
 from fastapi import APIRouter, Depends
 
 from models.db_models.coldef import ColDef
+from models.db_models.relationdef import RelationDef
 from utils.user_auth.auth.models import User
 from sqlalchemy import text, select, func
 from sqlalchemy.ext.asyncio import create_async_engine
@@ -98,7 +99,7 @@ async def get_home_statis():
          include_in_schema=True)
 async def get_relation_model_select_options():
     try:
-        returndict = {'status':1,'msg':_("Get relation mode select options Error")}
+        returndict = {'status':1,'msg':_("Get relation model select options Error")}
         stmt = select(ColDef)
         result = (await site.db.async_scalars(stmt)).all()
         if len(result) > 0:
@@ -110,7 +111,7 @@ async def get_relation_model_select_options():
             returndict['data'] = datalist
         return returndict
     except Exception as e:
-        log.error('Get datasource select options Error !')
+        log.error('Get relation model select options Error !')
         traceback.print_exc()
         return returndict
 
@@ -122,7 +123,7 @@ async def get_relation_model_select_options():
          include_in_schema=True)
 async def get_relation_model_field_select_options(coldefname: str):
     try:
-        returndict = {'status':1,'msg':_("Get relation mode field select options Error")}
+        returndict = {'status':1,'msg':_("Get relation model field select options Error")}
         stmt = select(ColDef).where(ColDef.coldef_name == coldefname)
         result = (await site.db.async_scalars(stmt)).all()
         if len(result) == 1:
@@ -135,9 +136,36 @@ async def get_relation_model_field_select_options(coldefname: str):
             returndict['data'] = datalist
         return returndict
     except Exception as e:
-        log.error('Get datasource select options Error !')
+        log.error('Get relation model field select options Error !')
         traceback.print_exc()
         return returndict
+
+
+# graph relation select
+@router.get('/get_graph_relation_select_options',
+         tags=["admin"],
+         summary="Get graph relation select options list.",
+         description="Return graph relation select options list",
+         include_in_schema=True)
+async def get_graph_relation_select_options():
+    try:
+        returndict = {'status':1,'msg':_("Get graph relation select options Error")}
+        stmt = select(RelationDef)
+        result = (await site.db.async_scalars(stmt)).all()
+        if len(result) > 0:
+            datalist = []
+            for relation in result:
+                datalist.append({'label':relation.relationdef_name,'value':relation.relationdef_name})
+            returndict['status'] = 0
+            returndict['msg'] = 'Success'
+            returndict['data'] = datalist
+        return returndict
+    except Exception as e:
+        log.error('Get graph relation select options Error !')
+        traceback.print_exc()
+        return returndict
+
+
 """
 Example：get_ds_select_options
 """

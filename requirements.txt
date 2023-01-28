@@ -33,3 +33,4 @@ jaeger-client>=4.8.0
 Starlette-OpenTracing>=0.1.0
 opentracing_instrumentation>=3.3.1
 asgiref>=3.5.2
+arango-orm>=0.7.0

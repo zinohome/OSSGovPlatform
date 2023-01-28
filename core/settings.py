@@ -29,6 +29,13 @@ class Settings(AmisSettings):
     amis_theme: str = 'cxd'
     allow_origins: List[str] = ["*"]
 
+    # arangodb
+    arangodb_hosts: str = 'http://192.168.32.112:8529'
+    arangodb_sys_database: str = '_system'
+    arangodb_database: str = '_system'
+    arangodb_user: str = 'root'
+    arangodb_password: str = 'passw0rd'
+
     # 服务器配置
     server_name: str = 'Practitioner-server'
     server_core_origins: str = '[*]'
@@ -44,6 +51,7 @@ settings = Settings(_env_file=os.path.join(BASE_DIR, '.env'))
 
 
 if __name__ == '__main__':
+    print(settings.arangodb_hosts)
     print(settings.debug)
     print(settings.version)
     print(settings.site_description)

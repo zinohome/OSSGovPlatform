@@ -33,6 +33,13 @@ class Settings(BaseSettings):
     app_log_level: str = Field('', env='APP_LOG_LEVEL')
     app_log_filename: str = Field('', env='APP_LOG_FILENAME')
 
+    #arangodb
+    arangodb_hosts: str = Field('', env='ARANGODB_HOSTS')
+    arangodb_sys_database: str = Field('', env='ARANGODB_SYS_DATABASE')
+    arangodb_database: str = Field('', env='ARANGODB_DATABASE')
+    arangodb_user: str = Field('', env='ARANGODB_USER')
+    arangodb_password: str = Field('', env='ARANGODB_PASSWORD')
+
     # 服务器配置
     server_name: str = Field('Practitioner-server', env='SERVER_NAME')
     # SERVER_CORS_ORIGINS is a JSON-formatted list of origins

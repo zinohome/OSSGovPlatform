@@ -742,7 +742,7 @@ class BaseModelAdmin(SQLModelCrud):
     # 单件处理
     async def get_actions_on_item(self, request: Request) -> List[Action]:
         actions = [
-            await self.get_read_action(request),
+            #await self.get_read_action(request),
             await self.get_update_action(request, bulk=False),
             await self.get_delete_action(request, bulk=False),
         ]
