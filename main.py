@@ -49,7 +49,7 @@ asyncurl = str(site.db.engine.sync_engine.url)
 syncurl = sync_uri(asyncurl)
 syncengine = create_engine(syncurl, echo=False)
 metatables = GraphDef.metadata.tables
-#log.debug(metatables.keys())
+log.debug(metatables.keys())
 Database(syncengine).run_sync(SQLModel.metadata.create_all, tables=[metatables['auth_user_roles'],
                                                                     metatables['auth_user_groups'],
                                                                     metatables['auth_group_roles'],

@@ -58,6 +58,7 @@ from .utils import (
     schema_create_by_modelfield,
 )
 
+
 sql_operator_pattern: Pattern = re.compile(r"^\[(=|<=|<|>|>=|!|!=|<>|\*|!\*|~|!~|-)]")
 sql_operator_map: Dict[str, str] = {
     "=": "__eq__",
@@ -460,23 +461,29 @@ class SQLModelCrud(BaseCrud, SQLModelSelector):
         ):
             if not await self.has_list_permission(request, paginator, filters):
                 return self.error_no_router_permission(request)
-            data = ItemListSchema(items=[])
-            page, perPage = paginator.page, paginator.perPage
-            filters_data = await self.on_filter_pre(request, filters)
-            if filters_data:
-                stmt = stmt.filter(*self.calc_filter_clause(filters_data))
-            if paginator.show_total:
-                data.total = await self.db.async_scalar(select(func.count("*")).select_from(stmt.subquery()))
-            orderBy = self._calc_ordering(paginator.orderBy, paginator.orderDir)
-            if orderBy:
-                stmt = stmt.order_by(*orderBy)
-            stmt = stmt.limit(perPage).offset((page - 1) * perPage)
-            result = await self.db.async_execute(stmt)
-            data.items = self.parser.conv_row_to_dict(result.all())
-            data.items = [self.list_item(item) for item in data.items] if data.items else []
-            data.query = request.query_params
-            data.filters = filters_data
-            return BaseApiOut(data=data)
+            if hasattr(self.model, '__ISARANGODB__'):
+                data = ItemListSchema(items=[])
+                page, perPage = paginator.page, paginator.perPage
+                print(data)
+                return BaseApiOut(data=data)
+            else:
+                data = ItemListSchema(items=[])
+                page, perPage = paginator.page, paginator.perPage
+                filters_data = await self.on_filter_pre(request, filters)
+                if filters_data:
+                    stmt = stmt.filter(*self.calc_filter_clause(filters_data))
+                if paginator.show_total:
+                    data.total = await self.db.async_scalar(select(func.count("*")).select_from(stmt.subquery()))
+                orderBy = self._calc_ordering(paginator.orderBy, paginator.orderDir)
+                if orderBy:
+                    stmt = stmt.order_by(*orderBy)
+                stmt = stmt.limit(perPage).offset((page - 1) * perPage)
+                result = await self.db.async_execute(stmt)
+                data.items = self.parser.conv_row_to_dict(result.all())
+                data.items = [self.list_item(item) for item in data.items] if data.items else []
+                data.query = request.query_params
+                data.filters = filters_data
+                return BaseApiOut(data=data)
 
         return route
 
