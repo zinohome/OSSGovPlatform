@@ -86,9 +86,15 @@ class Arango_Student(Collection):
     def query(self, request, paginator, filters):
         log.debug(request)
         log.debug(paginator)
+        log.debug(paginator.page)
+        log.debug(paginator.perPage)
+        log.debug(paginator.perPageMax)
+        log.debug(paginator.show_total)
+        log.debug(paginator.orderBy)
+        log.debug(paginator.orderDir)
         log.debug(filters)
         log.debug(filters.__dict__)
         ossbase = OssBase().db
-        records = ossbase.query(Arango_Student).all()
+        records = ossbase.query(Arango_Student).sort(paginator.orderBy + ' ' + paginator.orderDir).all()
         log.debug(records)
         return None
