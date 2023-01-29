@@ -27,7 +27,7 @@ class BaseSQLModel(sqlmodel.SQLModel):
 class Student(BaseSQLModel, table=True):
     __tablename__ = 'student'
     __ISARANGODB__ = True
-    student_id: int = models.Field(default=None, title=_('student_id'), primary_key=True, nullable=False)
+    id: str = models.Field(default=None, title=_('id'), primary_key=True, nullable=False)
     name: str = models.Field(title=_('name'), nullable=False,
                                     amis_form_item=amis.InputText(name='name', label=_('name'), disabled=False),
                                     amis_table_column='')

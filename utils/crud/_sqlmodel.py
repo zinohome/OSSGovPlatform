@@ -1,4 +1,5 @@
 import datetime
+import importlib
 import re
 from enum import Enum
 from typing import (
@@ -464,7 +465,11 @@ class SQLModelCrud(BaseCrud, SQLModelSelector):
             if hasattr(self.model, '__ISARANGODB__'):
                 data = ItemListSchema(items=[])
                 page, perPage = paginator.page, paginator.perPage
-                print(data)
+                arangomodel = importlib.import_module(
+                    'models.arango_models.arango_' + self.model.__tablename__.strip().lower())
+                arangoclass = getattr(arangomodel, 'Arango_' + self.model.__tablename__.strip().capitalize())()
+                result = getattr(arangoclass, 'query')(request, paginator, filters)
+                print(result)
                 return BaseApiOut(data=data)
             else:
                 data = ItemListSchema(items=[])
@@ -495,16 +500,31 @@ class SQLModelCrud(BaseCrud, SQLModelSelector):
         ) -> BaseApiOut[Union[int, self.schema_model]]:  # type: ignore
             if not await self.has_create_permission(request, data):
                 return self.error_no_router_permission(request)
-            if not isinstance(data, list):
-                data = [data]
-            items = [await self.on_create_pre(request, obj) for obj in data]
-            if not items:
-                return self.error_data_handle(request)
-            try:
-                result = await self.db.async_run_sync(self._create_items, items=items)
-            except Exception as error:
-                return self.error_execute_sql(request=request, error=error)
-            return BaseApiOut(data=result)
+            if hasattr(self.model, '__ISARANGODB__'):
+                if not isinstance(data, list):
+                    data = [data]
+                items = [await self.on_create_pre(request, obj) for obj in data]
+                if not items:
+                    return self.error_data_handle(request)
+                try:
+                    #result = await self.db.async_run_sync(self._create_items, items=items)
+                    arangomodel = importlib.import_module('models.arango_models.arango_' + self.model.__tablename__.strip().lower())
+                    arangoclass = getattr(arangomodel, 'Arango_'+self.model.__tablename__.strip().capitalize())()
+                    result = getattr(arangoclass,'create')(items)
+                except Exception as error:
+                    return self.error_execute_sql(request=request, error=error)
+                return BaseApiOut(data=result)
+            else:
+                if not isinstance(data, list):
+                    data = [data]
+                items = [await self.on_create_pre(request, obj) for obj in data]
+                if not items:
+                    return self.error_data_handle(request)
+                try:
+                    result = await self.db.async_run_sync(self._create_items, items=items)
+                except Exception as error:
+                    return self.error_execute_sql(request=request, error=error)
+                return BaseApiOut(data=result)
 
         return route
 

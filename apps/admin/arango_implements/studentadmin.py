@@ -46,8 +46,8 @@ class StudentAdmin(admin.ModelAdmin):
     model = Student
     pk_name = 'name'
     enable_bulk_create = True
-    list_display = [Student.name, Student.age, Student.teachers, Student.subjects]
-    search_fields = [Student.name, Student.age, Student.teachers, Student.subjects]
+    list_display = [Student.id, Student.name, Student.age, Student.teachers, Student.subjects]
+    search_fields = [Student.id, Student.name, Student.age, Student.teachers, Student.subjects]
 
     def __init__(self, app: "AdminApp"):
         # 初始化

@@ -52,6 +52,7 @@ settings = Settings(_env_file=os.path.join(BASE_DIR, '.env'))
 
 if __name__ == '__main__':
     print(settings.arangodb_hosts)
+    print(settings.app_exception_detail)
     print(settings.debug)
     print(settings.version)
     print(settings.site_description)

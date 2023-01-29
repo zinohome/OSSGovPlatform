@@ -21,6 +21,7 @@ from sqlalchemy.engine.url import URL
 from core.settings import settings
 from utils.log import log as log
 from datetime import datetime
+import uuid
 
 type_sql2py_dict = {}
 for key in satypes.__dict__['__all__']:
@@ -94,9 +95,13 @@ def object_as_dict(obj):
 def id_array_to_str(ids):
     return ','.join(map(str, ids))
 
+def uid():
+    return str(uuid.uuid4()).replace('-','')
+
 if __name__ == '__main__':
     #pass
     ids = [71,72,73]
     log.debug(id_array_to_str(ids))
     ids = [71]
     log.debug(id_array_to_str(ids))
+    log.debug(uid())
