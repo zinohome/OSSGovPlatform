@@ -71,8 +71,6 @@ class NavAdmin(admin.ModelAdmin):
                 return self.error_data_handle(request)
             try:
                 result = await self.db.async_run_sync(self._create_items, items=items)
-                log.debug(result)
-                log.debug(result.__dict__)
             except Exception as error:
                 return self.error_execute_sql(request=request, error=error)
             return BaseApiOut(data=result)

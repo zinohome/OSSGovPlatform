@@ -83,7 +83,7 @@ class Arango_Student(Collection):
             if settings.app_exception_detail:
                 traceback.print_exc()
 
-    def query(self, request, paginator, filters):
+    def query(self, paginator, filters):
         ossbase = OssBase().db
         sortstr = paginator.orderBy + ' ' + paginator.orderDir
         filterstr = ''
@@ -111,6 +111,43 @@ class Arango_Student(Collection):
                 records = ossbase.query(Arango_Student).limit(paginator.perPage,
                                                               start_from=(paginator.page - 1) * paginator.perPage).all()
         return records, ossbase.query(Arango_Student).count()
+
+    def read(self, item_id):
+        log.debug(item_id)
+        if isinstance(item_id,list):
+            keystr = item_id[0]
+        else:
+            keystr = item_id
+        try:
+            ossbase = OssBase().db
+            return ossbase.query(Arango_Student).by_key(keystr).dict
+        except Exception as exp:
+            log.error('Exception at Arango_Student.read() %s ' % exp)
+            if settings.app_exception_detail:
+                traceback.print_exc()
+    def read(self, item_id):
+        if isinstance(item_id,list):
+            keystr = item_id[0]
+        else:
+            keystr = item_id
+        try:
+            ossbase = OssBase().db
+            return ossbase.query(Arango_Student).by_key(keystr).dict
+        except Exception as exp:
+            log.error('Exception at Arango_Student.read() %s ' % exp)
+            if settings.app_exception_detail:
+                traceback.print_exc()
+
+    def delete(self, item_ids):
+        try:
+            ossbase = OssBase().db
+            for keystr in item_ids:
+                ossbase.delete(ossbase.query(Arango_Student).by_key(keystr))
+            return len(item_ids)
+        except Exception as exp:
+            log.error('Exception at Arango_Student.delete() %s ' % exp)
+            if settings.app_exception_detail:
+                traceback.print_exc()
 
     @property
     def dict(self):

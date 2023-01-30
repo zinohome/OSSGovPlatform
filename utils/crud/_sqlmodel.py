@@ -468,7 +468,7 @@ class SQLModelCrud(BaseCrud, SQLModelSelector):
                 arangomodel = importlib.import_module(
                     'models.arango_models.arango_' + self.model.__tablename__.strip().lower())
                 arangoclass = getattr(arangomodel, 'Arango_' + self.model.__tablename__.strip().capitalize())()
-                result, count = getattr(arangoclass, 'query')(request, paginator, filters)
+                result, count = getattr(arangoclass, 'query')(paginator, filters)
                 if paginator.show_total:
                     data.total = count
                 data.items = []
@@ -543,10 +543,17 @@ class SQLModelCrud(BaseCrud, SQLModelSelector):
         ):
             if not await self.has_read_permission(request, item_id):
                 return self.error_no_router_permission(request)
-            items = await self.db.async_run_sync(self._read_items, item_id)
-            if len(items) == 1:
-                items = items[0]
-            return BaseApiOut(data=items)
+            if hasattr(self.model, '__ISARANGODB__'):
+                arangomodel = importlib.import_module(
+                    'models.arango_models.arango_' + self.model.__tablename__.strip().lower())
+                arangoclass = getattr(arangomodel, 'Arango_' + self.model.__tablename__.strip().capitalize())()
+                items = getattr(arangoclass, 'read')(item_id)
+                return BaseApiOut(data=items)
+            else:
+                items = await self.db.async_run_sync(self._read_items, item_id)
+                if len(items) == 1:
+                    items = items[0]
+                return BaseApiOut(data=items)
 
         return route
 
@@ -576,8 +583,15 @@ class SQLModelCrud(BaseCrud, SQLModelSelector):
         ):
             if not await self.has_delete_permission(request, item_ids):
                 return self.error_no_router_permission(request)
-            result = await self.db.async_run_sync(self._delete_items, item_ids)
-            return BaseApiOut(data=result)
+            if hasattr(self.model, '__ISARANGODB__'):
+                arangomodel = importlib.import_module(
+                    'models.arango_models.arango_' + self.model.__tablename__.strip().lower())
+                arangoclass = getattr(arangomodel, 'Arango_' + self.model.__tablename__.strip().capitalize())()
+                result = getattr(arangoclass, 'delete')(item_ids)
+                return BaseApiOut(data=result)
+            else:
+                result = await self.db.async_run_sync(self._delete_items, item_ids)
+                return BaseApiOut(data=result)
 
         return route
 
