@@ -468,8 +468,15 @@ class SQLModelCrud(BaseCrud, SQLModelSelector):
                 arangomodel = importlib.import_module(
                     'models.arango_models.arango_' + self.model.__tablename__.strip().lower())
                 arangoclass = getattr(arangomodel, 'Arango_' + self.model.__tablename__.strip().capitalize())()
-                result = getattr(arangoclass, 'query')(request, paginator, filters)
-                print(result)
+                result, count = getattr(arangoclass, 'query')(request, paginator, filters)
+                if paginator.show_total:
+                    data.total = count
+                data.items = []
+                for obj in result:
+                    data.items.append(obj.dict)
+                data.items = [self.list_item(item) for item in data.items] if data.items else []
+                data.query = request.query_params
+                data.filters = await self.on_filter_pre(request, filters)
                 return BaseApiOut(data=data)
             else:
                 data = ItemListSchema(items=[])
