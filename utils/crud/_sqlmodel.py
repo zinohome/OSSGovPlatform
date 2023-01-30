@@ -566,12 +566,25 @@ class SQLModelCrud(BaseCrud, SQLModelSelector):
         ):
             if not await self.has_update_permission(request, item_id, data):
                 return self.error_no_router_permission(request)
-            item_id = list(map(get_python_type_parse(self.pk), item_id))
-            values = await self.on_update_pre(request, data, item_id=item_id)
-            if not values:
-                return self.error_data_handle(request)
-            result = await self.db.async_run_sync(self._update_items, item_id, values)
-            return BaseApiOut(data=result)
+
+            if hasattr(self.model, '__ISARANGODB__'):
+                item_id = list(map(get_python_type_parse(self.pk), item_id))
+                values = await self.on_update_pre(request, data, item_id=item_id)
+                if not values:
+                    return self.error_data_handle(request)
+                arangomodel = importlib.import_module(
+                    'models.arango_models.arango_' + self.model.__tablename__.strip().lower())
+                arangoclass = getattr(arangomodel, 'Arango_' + self.model.__tablename__.strip().capitalize())()
+                result = getattr(arangoclass, 'update')(item_id, values)
+                print(result)
+                return BaseApiOut(data=result)
+            else:
+                item_id = list(map(get_python_type_parse(self.pk), item_id))
+                values = await self.on_update_pre(request, data, item_id=item_id)
+                if not values:
+                    return self.error_data_handle(request)
+                result = await self.db.async_run_sync(self._update_items, item_id, values)
+                return BaseApiOut(data=result)
 
         return route
 

@@ -138,6 +138,26 @@ class Arango_Student(Collection):
             if settings.app_exception_detail:
                 traceback.print_exc()
 
+    def update(self, item_id, values):
+        try:
+            ossbase = OssBase().db
+            uplen = len(item_id)
+            for keystr in item_id:
+                if self.existedDocument(keystr):
+                    origdict = ossbase.query(Arango_Student).by_key(keystr).__dict__.copy()
+                    updatevalue = {}
+                    updatevalue.update(origdict)
+                    updatevalue.update(values)
+                    updateobj = Arango_Student._load(updatevalue)
+                    ossbase.update(updateobj)
+                else:
+                    uplen = uplen -1
+            return uplen
+        except Exception as exp:
+            log.error('Exception at Arango_Student.update() %s ' % exp)
+            if settings.app_exception_detail:
+                traceback.print_exc()
+
     def delete(self, item_ids):
         try:
             ossbase = OssBase().db
