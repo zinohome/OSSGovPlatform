@@ -130,7 +130,8 @@ class SysAdminApp(admin.AdminApp):
 
     def __init__(self, app: "SysAdminApp"):
         super().__init__(app)
-        self.register_admin(NavAdmin, ColAdmin, PageAdmin, RelationAdmin, GraphAdmin, StudentAdmin)
+        #self.register_admin(NavAdmin, ColAdmin, PageAdmin, RelationAdmin, GraphAdmin, StudentAdmin)
+        self.register_admin(NavAdmin, ColAdmin, PageAdmin, RelationAdmin, GraphAdmin)
 
 # API docs
 @site.register_admin
@@ -142,7 +143,6 @@ class DocsAdmin(admin.IframeAdmin):
     @property
     def src(self):
         return f'{self.app.site.settings.site_url}/apidocs'
-
 
 @site.register_admin
 class ReDocsAdmin(admin.IframeAdmin):

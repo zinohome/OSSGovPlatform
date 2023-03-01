@@ -42,8 +42,8 @@ class NavAdmin(admin.ModelAdmin):
     model = NavDef
     pk_name = 'navdef_id'
     enable_bulk_create = True
-    list_display = [NavDef.navdef_order, NavDef.navdef_title, NavDef.navdef_name, NavDef.navdef_class, NavDef.createdate, NavDef.modifiedate]
-    search_fields = [NavDef.navdef_order, NavDef.navdef_title, NavDef.navdef_name, NavDef.navdef_class, NavDef.createdate, NavDef.modifiedate]
+    list_display = [NavDef.navdef_order, NavDef.navdef_title, NavDef.navdef_name, NavDef.navdef_class]
+    search_fields = [NavDef.navdef_order, NavDef.navdef_title, NavDef.navdef_name, NavDef.navdef_class]
 
     def __init__(self, app: "AdminApp"):
         # 初始化
